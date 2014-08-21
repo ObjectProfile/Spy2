@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "AndreiChis 8/21/2014 15:16",
+	"super" : "GTGenericStackDebugger",
+	"category" : "GT-Spy2-Debugger",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GTSpy2Debugger",
+	"type" : "normal"
+}
