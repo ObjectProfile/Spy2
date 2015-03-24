@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2SlotStubExample",
+	"category" : "Spy2-Tests-Plugins-Stubs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"c"
+	],
+	"name" : "S2SlotStubExampleSubclass",
+	"type" : "normal"
+}

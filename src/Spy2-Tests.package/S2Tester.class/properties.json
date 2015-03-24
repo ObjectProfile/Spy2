@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "Spy2-Tests-Utility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"beforeRunBlock",
+		"runWithInBlock",
+		"afterRunBlock",
+		"messageNotUnderstoodBlock",
+		"behaviors"
+	],
+	"name" : "S2Tester",
+	"type" : "normal"
+}

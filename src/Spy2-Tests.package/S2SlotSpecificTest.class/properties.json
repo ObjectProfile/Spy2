@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2SlotTest",
+	"category" : "Spy2-Tests-Plugins",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"readBlock",
+		"writeBlock"
+	],
+	"name" : "S2SlotSpecificTest",
+	"type" : "normal"
+}

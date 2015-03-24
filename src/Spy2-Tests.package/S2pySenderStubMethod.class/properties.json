@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Tests-Sender-Stub",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sendersBefore",
+		"sendersRun",
+		"senderInsideRun",
+		"senderInsideBeforeRun",
+		"senderInsideInsideRun"
+	],
+	"name" : "S2pySenderStubMethod",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Test",
+	"category" : "Spy2-Tests-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"profiler"
+	],
+	"name" : "S2InstrumentatorTest",
+	"type" : "normal"
+}
