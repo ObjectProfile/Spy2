@@ -1,0 +1,3 @@
+delegation
+literals
+	^ originalMethod literals

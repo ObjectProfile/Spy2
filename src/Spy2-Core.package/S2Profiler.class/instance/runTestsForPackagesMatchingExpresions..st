@@ -1,0 +1,4 @@
+running tests
+runTestsForPackagesMatchingExpresions: regexCollection
+
+	^ self runTestsForPackagesMatchingExpressions: regexCollection

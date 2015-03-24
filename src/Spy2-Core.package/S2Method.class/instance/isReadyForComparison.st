@@ -1,0 +1,3 @@
+comparison
+isReadyForComparison
+	^ self profiler isReadyForComparison

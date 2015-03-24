@@ -1,0 +1,3 @@
+initialization
+setInstallOnClassSide
+	installOnClassSide := true

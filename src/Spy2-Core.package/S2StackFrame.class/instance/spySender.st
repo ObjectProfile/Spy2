@@ -1,0 +1,4 @@
+accessing
+spySender
+
+	^ self sender

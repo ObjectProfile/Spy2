@@ -1,0 +1,3 @@
+A S2AbstractInstrumentator is the responsible of method instrumentation in Spy2. This class represent the current instrumentation state of a profiler, is responsible for correct changes of instrumented methods, apply the plugins and the cleaning of the system.
+
+For managing the methods, classes and packages instrumented it uses Ring representations, which do not reference the concrete Compiled Method or class, instead it has a reference for the further lookup in the system, always having a consistent reference to the current version in the system.

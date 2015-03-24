@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "AlejandroInfante 12/31/2014 16:15",
+	"super" : "Object",
+	"category" : "Spy2-Core-Instrumentator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"profiler"
+	],
+	"name" : "S2AbstractInstrumentator",
+	"type" : "normal"
+}

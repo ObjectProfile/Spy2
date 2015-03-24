@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Slot",
+	"category" : "Spy2-Core-Plugins-Class",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"profiler",
+		"originalSlot",
+		"slotClass",
+		"reading",
+		"writing"
+	],
+	"name" : "S2Slot",
+	"type" : "normal"
+}

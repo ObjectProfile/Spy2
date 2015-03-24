@@ -1,0 +1,3 @@
+hooks
+uninstall
+	self subclassResponsibility

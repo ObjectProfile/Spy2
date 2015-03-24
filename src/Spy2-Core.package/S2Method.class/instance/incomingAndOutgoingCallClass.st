@@ -1,0 +1,3 @@
+hooks
+incomingAndOutgoingCallClass
+	^ IdentitySet

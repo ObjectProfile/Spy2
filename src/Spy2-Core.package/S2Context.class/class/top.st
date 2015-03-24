@@ -1,0 +1,4 @@
+accessing
+top
+
+	^ self value

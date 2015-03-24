@@ -1,0 +1,3 @@
+start-stop profiling
+startOnPackagesMatchingExpresions: regexCollection
+	self startOnPackagesMatchingExpressions: regexCollection

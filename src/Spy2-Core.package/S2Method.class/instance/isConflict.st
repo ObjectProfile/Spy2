@@ -1,0 +1,3 @@
+delegation
+isConflict
+	^ originalMethod isConflict

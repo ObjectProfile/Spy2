@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Spy2",
+	"category" : "Spy2-Core-Metamodel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"instrumentedMethod",
+		"originalMethod",
+		"selector",
+		"classSpy",
+		"packageSpy",
+		"outgoingCalls",
+		"incomingCalls",
+		"executionTime",
+		"staticOutgoingCalls"
+	],
+	"name" : "S2Method",
+	"type" : "normal"
+}

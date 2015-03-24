@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Plugin",
+	"category" : "Spy2-Core-Plugins-Methods",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "S2MethodPlugin",
+	"type" : "normal"
+}

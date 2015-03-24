@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2ProfilerPlugin",
+	"category" : "Spy2-Core-Plugins-Profiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"originalMethods"
+	],
+	"name" : "S2PointNewPlugin",
+	"type" : "normal"
+}

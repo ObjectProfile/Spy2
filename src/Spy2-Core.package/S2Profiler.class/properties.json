@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "Spy2",
+	"category" : "Spy2-Core-Metamodel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"LastProfile"
+	],
+	"instvars" : [
+		"packages",
+		"allClassesAsDictionaryCache",
+		"allMethodsCache",
+		"unitTestResult",
+		"allNonAbstractMethodsCache",
+		"methodPlugins",
+		"classPlugins",
+		"profilerPlugins",
+		"allClassesCache",
+		"instrumentator"
+	],
+	"name" : "S2Profiler",
+	"type" : "normal"
+}

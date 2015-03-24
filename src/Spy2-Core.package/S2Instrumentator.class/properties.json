@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "S2AbstractInstrumentator",
+	"category" : "Spy2-Core-Instrumentator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Instance"
+	],
+	"instvars" : [
+		"classes",
+		"methods",
+		"packages"
+	],
+	"name" : "S2Instrumentator",
+	"type" : "normal"
+}

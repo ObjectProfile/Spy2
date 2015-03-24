@@ -1,0 +1,4 @@
+accessing
+isLocked
+
+	^ self value

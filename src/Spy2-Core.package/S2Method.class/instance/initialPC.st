@@ -1,0 +1,3 @@
+delegation
+initialPC
+	^ originalMethod initialPC

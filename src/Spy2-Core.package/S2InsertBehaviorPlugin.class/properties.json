@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "S2ClassPlugin",
+	"category" : "Spy2-Core-Plugins-Class",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"newMethods",
+		"selector",
+		"classSelectorBlock",
+		"behaviorCode"
+	],
+	"name" : "S2InsertBehaviorPlugin",
+	"type" : "normal"
+}

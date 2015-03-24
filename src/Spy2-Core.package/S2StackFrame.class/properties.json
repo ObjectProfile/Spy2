@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Core-Context",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"spyMethod",
+		"arguments",
+		"receiver",
+		"sender"
+	],
+	"name" : "S2StackFrame",
+	"type" : "normal"
+}

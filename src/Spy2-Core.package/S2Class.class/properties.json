@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Spy2",
+	"category" : "Spy2-Core-Metamodel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"methods",
+		"className",
+		"allSubclassesCache",
+		"packageSpy",
+		"metaclassSpy"
+	],
+	"name" : "S2Class",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+delegation
+last
+	^ originalMethod last

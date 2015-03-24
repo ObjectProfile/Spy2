@@ -1,0 +1,4 @@
+testing
+isSpy
+
+	^ true

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2ProcessVariable",
+	"category" : "Spy2-Core-Context",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "S2Lock",
+	"type" : "normal"
+}

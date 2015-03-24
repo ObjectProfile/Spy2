@@ -1,0 +1,3 @@
+delegation
+sourcePointer
+	^ originalMethod sourcePointer

@@ -1,0 +1,3 @@
+hooks
+priority
+	^ 10
