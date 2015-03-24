@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2pyA",
+	"category" : "Spy2-Scenario",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"b"
+	],
+	"name" : "S2pyB",
+	"type" : "normal"
+}
