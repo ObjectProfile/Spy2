@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Class",
+	"category" : "Spy2-Examples-MSP2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"records",
+		"groups"
+	],
+	"name" : "MSP2Class",
+	"type" : "normal"
+}

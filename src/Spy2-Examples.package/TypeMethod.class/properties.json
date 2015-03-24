@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-Type",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"arguments",
+		"result",
+		"numberOfExecutions"
+	],
+	"name" : "TypeMethod",
+	"type" : "normal"
+}

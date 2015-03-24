@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-Visibility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"visibility",
+		"hasBeenExecuted"
+	],
+	"name" : "VisibilityMethod",
+	"type" : "normal"
+}

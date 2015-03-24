@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "Spy2-Examples-StringProfiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StringProfiler",
+	"type" : "normal"
+}

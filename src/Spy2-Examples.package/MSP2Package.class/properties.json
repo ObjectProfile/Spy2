@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Package",
+	"category" : "Spy2-Examples-MSP2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MSP2Package",
+	"type" : "normal"
+}

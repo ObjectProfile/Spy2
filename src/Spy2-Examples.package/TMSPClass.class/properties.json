@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Class",
+	"category" : "Spy2-Examples-Multistage2TMP",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"records",
+		"groups"
+	],
+	"name" : "TMSPClass",
+	"type" : "normal"
+}

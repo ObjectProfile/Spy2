@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-MemoryBlueprint",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"counting",
+		"callingMethods",
+		"calledMethods",
+		"alreadyCheckedMethods",
+		"numberOfExecutions"
+	],
+	"name" : "MSPMethod",
+	"type" : "normal"
+}

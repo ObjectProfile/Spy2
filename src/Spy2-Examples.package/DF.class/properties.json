@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "Spy2-Examples-Diff",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DF",
+	"type" : "normal"
+}

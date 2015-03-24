@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "Spy2-Examples-MSP2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"classesToTrack",
+		"trackStrings",
+		"trackPoints",
+		"groups"
+	],
+	"name" : "MSP2",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+hooks
+markAsRead
+
+	read := true

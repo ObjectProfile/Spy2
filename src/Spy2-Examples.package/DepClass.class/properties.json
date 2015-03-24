@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Class",
+	"category" : "Spy2-Examples-MethodDependencies",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"outgoingCallsCache"
+	],
+	"name" : "DepClass",
+	"type" : "normal"
+}

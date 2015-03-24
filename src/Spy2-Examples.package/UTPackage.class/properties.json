@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Package",
+	"category" : "Spy2-Examples-UndertestedMethods",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "UTPackage",
+	"type" : "normal"
+}

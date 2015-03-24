@@ -1,0 +1,3 @@
+visibility
+hitPublicVisibility
+	visibility := #public

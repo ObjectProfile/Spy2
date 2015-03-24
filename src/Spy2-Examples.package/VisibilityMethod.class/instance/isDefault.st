@@ -1,0 +1,3 @@
+testing
+isDefault
+	^ visibility == #default

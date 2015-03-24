@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-StringProfiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"counter",
+		"sem",
+		"timesExecuted",
+		"set"
+	],
+	"name" : "StringProfilerMethod",
+	"type" : "normal"
+}

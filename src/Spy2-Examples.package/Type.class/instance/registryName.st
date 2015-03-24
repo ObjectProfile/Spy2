@@ -1,0 +1,3 @@
+hooks
+registryName
+	^ #Type

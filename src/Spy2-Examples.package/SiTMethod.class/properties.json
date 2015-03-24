@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-SimilarityTest",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"testMethods",
+		"testedMethods"
+	],
+	"name" : "SiTMethod",
+	"type" : "normal"
+}

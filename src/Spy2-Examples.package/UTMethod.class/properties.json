@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-UndertestedMethods",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isCovered",
+		"hasBeenExecuted",
+		"isOnlyInvokedOnMyself"
+	],
+	"name" : "UTMethod",
+	"type" : "normal"
+}

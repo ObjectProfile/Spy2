@@ -1,0 +1,3 @@
+testing
+isPublic
+	^ visibility == #public

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-Diff",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"allingMethods",
+		"calledMethods",
+		"numberOfExecutions",
+		"callingMethods"
+	],
+	"name" : "DFMethod",
+	"type" : "normal"
+}

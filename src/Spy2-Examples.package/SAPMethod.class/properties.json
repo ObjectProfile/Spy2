@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-StateAccessProfiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"read",
+		"write"
+	],
+	"name" : "SAPMethod",
+	"type" : "normal"
+}

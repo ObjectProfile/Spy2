@@ -1,0 +1,4 @@
+hooks
+markAsWrite
+
+	write := true
