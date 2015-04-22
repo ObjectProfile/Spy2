@@ -4,7 +4,7 @@ baseline01: spec
 	
 	spec for: #common do: [ 
 		spec blessing: #baseline.
-		spec repository: 'http://smalltalkhub.com/mc/ObjectProfile/S2py/main'.
+		spec repository: 'http://smalltalkhub.com/mc/ObjectProfile/Spy2/main'.
 		spec project: 'Roassal2' with: [ 
 			spec
 				versionString: #bleedingEdge;

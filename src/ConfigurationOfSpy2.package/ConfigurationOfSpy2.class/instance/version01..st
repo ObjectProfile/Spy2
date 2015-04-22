@@ -4,7 +4,7 @@ version01: spec
 	
 	spec for: #common do: [ 
 		spec blessing: #release.
-		spec repository: 'http://smalltalkhub.com/mc/ObjectProfile/S2py/main'.
+		spec repository: 'http://smalltalkhub.com/mc/ObjectProfile/Spy2/main'.
 		spec project: 'Roassal2' with: '1.9'.
 		spec 
 			package: 'Spy2-Core' with: 'Spy2-Core-AlejandroInfante.3';
