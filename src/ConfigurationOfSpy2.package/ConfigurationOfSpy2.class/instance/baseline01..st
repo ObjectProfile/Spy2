@@ -22,11 +22,7 @@ baseline01: spec
 														requires: 'Spy2-Scenario' ];
 			package: 'Spy2-Examples' with: [ spec
 														requires: 'Spy2-Core';
-														requires: 'Spy2-Visualization'];
-			package: 'GT-Spy2-Inspector' with: [ spec
-																requires: 'Spy2-Core';
-																requires: 'Spy2-Visualization';
-																requires: 'Spy2-Examples'].
+														requires: 'Spy2-Visualization' ].
 		spec 
 			group: 'Core' 	with: #('Spy2-Core');
 			group: 'Tests'	with: #('Core' 'Spy2-Tests');

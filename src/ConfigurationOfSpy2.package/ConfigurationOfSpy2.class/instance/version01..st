@@ -11,6 +11,5 @@ version01: spec
 			package: 'Spy2-Visualization' with: 'Spy2-Visualization-AlejandroInfante.2';
 			package: 'Spy2-Scenario' with: 'Spy2-Scenario-AlejandroInfante.1';
 			package: 'Spy2-Tests' with: 'Spy2-Tests-AlejandroInfante.1';
-			package: 'Spy2-Examples' with: 'Spy2-Examples-AlejandroInfante.3';
-			package: 'GT-Spy2-Inspector' with: 'GT-Spy2-Inspector-AlejandroInfante.9'
+			package: 'Spy2-Examples' with: 'Spy2-Examples-AlejandroInfante.3'
 		]
