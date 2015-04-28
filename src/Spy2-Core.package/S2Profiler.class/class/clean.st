@@ -1,4 +1,4 @@
 util
 clean
-	" Uninstall on all classes"
-	self removeFromClasses: Smalltalk allClasses
+	self removeAllTemplates.
+	self hasSlots ifTrue: [self cleanSlots].
