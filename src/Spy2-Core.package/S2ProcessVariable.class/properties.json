@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ProcessLocalVariable",
-	"category" : "Spy2-Core-Context",
+	"category" : "Spy2-Core-Utils",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

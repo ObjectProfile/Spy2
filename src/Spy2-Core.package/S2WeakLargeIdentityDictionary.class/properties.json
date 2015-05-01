@@ -1,16 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "Collection",
 	"category" : "Spy2-Core-Utils",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"spyMethod",
-		"arguments",
-		"receiver",
-		"sender"
+		"tally",
+		"tallies",
+		"items"
 	],
-	"name" : "S2StackFrame",
+	"name" : "S2WeakLargeIdentityDictionary",
 	"type" : "normal"
 }

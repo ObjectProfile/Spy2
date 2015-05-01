@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "S2ProcessVariable",
+	"super" : "Collection",
 	"category" : "Spy2-Core-Utils",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Unique"
+	],
 	"instvars" : [ ],
-	"name" : "S2Lock",
+	"name" : "S2NullLargeTableItem",
 	"type" : "normal"
 }

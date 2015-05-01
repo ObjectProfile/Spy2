@@ -6,11 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"spyMethod",
-		"arguments",
-		"receiver",
-		"sender"
+		"key",
+		"value",
+		"next"
 	],
-	"name" : "S2StackFrame",
+	"name" : "S2WeakLargeTableItem",
 	"type" : "normal"
 }
