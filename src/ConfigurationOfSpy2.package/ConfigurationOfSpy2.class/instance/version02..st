@@ -7,8 +7,8 @@ version02: spec
 		spec repository: 'http://smalltalkhub.com/mc/ObjectProfile/Spy2/main'.
 		spec project: 'Roassal2' with: '1.9'.
 		spec 
-			package: 'Spy2-Core' with: 'Spy2-Core-AlejandroInfante.6';
-			package: 'Spy2-Visualization' with: 'Spy2-Visualization-AlejandroInfante.2';
+			package: 'Spy2-Core' with: 'Spy2-Core-AlejandroInfante.7';
+			package: 'Spy2-Visualization' with: 'Spy2-Visualization-AlejandroInfante.3';
 			package: 'Spy2-Scenario' with: 'Spy2-Scenario-AlejandroInfante.1';
 			package: 'Spy2-Tests' with: 'Spy2-Tests-AlejandroInfante.1';
 			package: 'Spy2-Examples' with: 'Spy2-Examples-AlejandroInfante.5'
