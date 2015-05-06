@@ -1,3 +1,0 @@
-testing
-isCovered
-	^ self hasBeenExecuted

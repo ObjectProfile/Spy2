@@ -1,3 +1,0 @@
-hooks
-registryName
-	^ #Hapao2
