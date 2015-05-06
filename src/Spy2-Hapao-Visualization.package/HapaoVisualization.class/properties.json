@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Hapao-Visualization",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"profiler"
+	],
+	"name" : "HapaoVisualization",
+	"type" : "normal"
+}
