@@ -1,0 +1,3 @@
+testing
+isCovered
+	^ self hasBeenExecuted

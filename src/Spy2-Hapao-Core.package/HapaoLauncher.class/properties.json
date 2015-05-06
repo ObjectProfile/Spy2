@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Hapao-Core",
+	"classinstvars" : [
+		"icon"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HapaoLauncher",
+	"type" : "normal"
+}

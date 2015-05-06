@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Hapao-Core",
+	"classinstvars" : [
+		"maxCalls",
+		"maxLines",
+		"maxCallers"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"hasBeenExecuted",
+		"calls",
+		"callers"
+	],
+	"name" : "Hapao2Method",
+	"type" : "normal"
+}
