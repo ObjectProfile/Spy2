@@ -81,3 +81,4 @@ visualizeOn: view
 "
 
 	self visualizeLegendOn: view.
+	"view @ RTDoubleScrollBar."
