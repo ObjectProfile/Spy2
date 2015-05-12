@@ -1,6 +1,6 @@
 *GT-Spy2-Inspector
 gtInspectorViewIn: composite
-	<gtInspectorPresentationOrder: 10>
+	<gtInspectorPresentationOrder: 15>
 	composite roassal2
 		title: 'View';
 		initializeView: [ | v |
