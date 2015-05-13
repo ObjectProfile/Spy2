@@ -1,6 +1,6 @@
 *Spy2-Hapao-Visualization
 gtInspectorListIn: composite
-	<gtInspectorPresentationOrder: -5>
+	<gtInspectorPresentationOrder: 25>
 	composite roassal2
 		title: 'List';
 		initializeView: [ | v |
