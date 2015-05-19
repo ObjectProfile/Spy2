@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Array",
+	"category" : "Spy2-CollectionProfiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"spyModel"
+	],
+	"name" : "LArray",
+	"type" : "variable"
+}

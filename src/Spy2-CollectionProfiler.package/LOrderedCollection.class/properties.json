@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2OrderedCollection",
+	"category" : "Spy2-CollectionProfiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"spyModel"
+	],
+	"name" : "LOrderedCollection",
+	"type" : "normal"
+}

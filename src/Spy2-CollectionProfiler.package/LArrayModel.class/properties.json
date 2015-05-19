@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-CollectionProfiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"arraySize",
+		"nbAt",
+		"nbAtPut",
+		"nbDo",
+		"nbCollect",
+		"nbSelect",
+		"creatingMethod",
+		"methodsInvolved"
+	],
+	"name" : "LArrayModel",
+	"type" : "normal"
+}

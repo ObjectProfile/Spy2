@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Class",
+	"category" : "Spy2-CollectionProfiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CollectionProfilerClass",
+	"type" : "normal"
+}
