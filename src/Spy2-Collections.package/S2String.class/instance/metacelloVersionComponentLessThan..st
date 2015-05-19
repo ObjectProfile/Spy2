@@ -1,0 +1,4 @@
+as yet unclassified
+metacelloVersionComponentLessThan: aMetacelloVersonComponent
+
+	^aMetacelloVersonComponent metacelloStringLessThanSelf: self

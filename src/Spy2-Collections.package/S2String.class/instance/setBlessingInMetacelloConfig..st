@@ -1,0 +1,4 @@
+as yet unclassified
+setBlessingInMetacelloConfig: aMetacelloConfig
+
+	aMetacelloConfig setBlessingWithString: self

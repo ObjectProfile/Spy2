@@ -1,0 +1,18 @@
+{
+	"classtraitcomposition" : "TSortable classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"array",
+		"tally",
+		"sortBlock",
+		"indexUpdateBlock"
+	],
+	"name" : "S2Heap",
+	"commentStamp" : "",
+	"super" : "S2Collection",
+	"traitcomposition" : "TSortable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Spy2-Collections"
+}

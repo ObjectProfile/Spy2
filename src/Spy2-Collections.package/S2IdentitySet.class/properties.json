@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Set",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "S2IdentitySet",
+	"type" : "normal"
+}

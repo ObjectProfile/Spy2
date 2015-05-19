@@ -1,0 +1,6 @@
+as yet unclassified
+any
+	"#first (used by SequenceableCollection>>anyOne) is an accessor of
+	Interval and does not error on an empty Interval."
+	
+	^ self at: 1

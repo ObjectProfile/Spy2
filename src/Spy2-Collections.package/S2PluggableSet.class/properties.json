@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Set",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"hashBlock",
+		"equalBlock"
+	],
+	"name" : "S2PluggableSet",
+	"type" : "normal"
+}

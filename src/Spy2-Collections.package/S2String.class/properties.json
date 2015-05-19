@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "S2ArrayedCollection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"AsciiOrder",
+		"CSLineEnders",
+		"CSNonSeparators",
+		"CSSeparators",
+		"CaseInsensitiveOrder",
+		"CaseSensitiveOrder",
+		"CrLfExchangeTable",
+		"LowercasingTable",
+		"Tokenish",
+		"TypeTable",
+		"UppercasingTable"
+	],
+	"instvars" : [ ],
+	"name" : "S2String",
+	"type" : "normal"
+}

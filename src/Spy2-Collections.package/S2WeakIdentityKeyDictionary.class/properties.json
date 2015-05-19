@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2WeakKeyDictionary",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "S2WeakIdentityKeyDictionary",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "S2String",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"NewSymbols",
+		"OneCharacterSymbols",
+		"SymbolTable"
+	],
+	"instvars" : [ ],
+	"name" : "S2Symbol",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2LinkedList",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"excessSignals"
+	],
+	"name" : "S2Semaphore",
+	"type" : "normal"
+}

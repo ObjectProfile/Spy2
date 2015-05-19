@@ -1,0 +1,4 @@
+as yet unclassified
+setAuthorInMetacelloConfig: aMetacelloConfig
+
+	aMetacelloConfig setAuthorWithString: self

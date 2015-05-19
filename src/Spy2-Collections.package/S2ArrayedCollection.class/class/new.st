@@ -1,0 +1,5 @@
+as yet unclassified
+new
+	"Answer a new instance of me, with size = 0."
+
+	^self new: 0

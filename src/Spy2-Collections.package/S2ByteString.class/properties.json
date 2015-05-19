@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2String",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"NonAsciiMap"
+	],
+	"instvars" : [ ],
+	"name" : "S2ByteString",
+	"type" : "bytes"
+}

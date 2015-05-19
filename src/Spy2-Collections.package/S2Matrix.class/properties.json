@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Collection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nrows",
+		"ncols",
+		"contents"
+	],
+	"name" : "S2Matrix",
+	"type" : "normal"
+}

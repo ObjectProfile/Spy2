@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Collection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tally",
+		"array"
+	],
+	"name" : "S2HashedCollection",
+	"type" : "normal"
+}

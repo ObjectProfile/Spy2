@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2OrderedCollection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sortBlock"
+	],
+	"name" : "S2SortedCollection",
+	"type" : "normal"
+}

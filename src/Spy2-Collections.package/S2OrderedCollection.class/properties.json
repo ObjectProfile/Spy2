@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "S2SequenceableCollection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"array",
+		"firstIndex",
+		"lastIndex"
+	],
+	"name" : "S2OrderedCollection",
+	"type" : "normal"
+}

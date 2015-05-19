@@ -1,0 +1,4 @@
+as yet unclassified
+convertToSystemString
+
+	^LanguageEnvironment defaultSystemConverter convertToSystemString: self

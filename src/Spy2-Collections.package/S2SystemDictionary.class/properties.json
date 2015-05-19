@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2IdentityDictionary",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cachedClassNames",
+		"cachedNonClassNames"
+	],
+	"name" : "S2SystemDictionary",
+	"type" : "normal"
+}

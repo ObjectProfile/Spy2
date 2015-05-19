@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2SequenceableCollection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"firstLink",
+		"lastLink"
+	],
+	"name" : "S2LinkedList",
+	"type" : "normal"
+}

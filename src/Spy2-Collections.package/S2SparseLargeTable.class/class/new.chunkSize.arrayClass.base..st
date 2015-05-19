@@ -1,0 +1,4 @@
+as yet unclassified
+new: size chunkSize: chunkSize arrayClass: aClass base: b
+
+	^self new: size chunkSize: chunkSize arrayClass: S2Array base: 1 defaultValue: nil.

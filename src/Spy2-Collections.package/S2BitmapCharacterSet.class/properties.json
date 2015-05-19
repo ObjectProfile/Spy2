@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Collection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"byteCharacters",
+		"wideCharacters",
+		"tally"
+	],
+	"name" : "S2BitmapCharacterSet",
+	"type" : "normal"
+}

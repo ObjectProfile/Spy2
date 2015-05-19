@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Collection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"table",
+		"loadfactor",
+		"size",
+		"capacity"
+	],
+	"name" : "S2HashTable",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Symbol",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "S2ByteSymbol",
+	"type" : "bytes"
+}

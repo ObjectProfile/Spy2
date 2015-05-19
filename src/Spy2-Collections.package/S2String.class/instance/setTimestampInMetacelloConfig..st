@@ -1,0 +1,4 @@
+as yet unclassified
+setTimestampInMetacelloConfig: aMetacelloConfig
+
+	aMetacelloConfig setTimestampWithString: self

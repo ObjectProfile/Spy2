@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Collection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Default"
+	],
+	"instvars" : [
+		"list",
+		"valueDictionary",
+		"sema"
+	],
+	"name" : "S2WeakRegistry",
+	"type" : "normal"
+}

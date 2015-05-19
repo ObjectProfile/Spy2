@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Set",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"flag"
+	],
+	"name" : "S2WeakSet",
+	"type" : "normal"
+}

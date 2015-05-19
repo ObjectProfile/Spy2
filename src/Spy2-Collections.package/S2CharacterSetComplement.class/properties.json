@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Collection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"absent",
+		"byteArrayMapCache"
+	],
+	"name" : "S2CharacterSetComplement",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "S2ArrayedCollection",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"base",
+		"size",
+		"chunkSize",
+		"defaultValue"
+	],
+	"name" : "S2SparseLargeTable",
+	"type" : "variable"
+}

@@ -1,0 +1,4 @@
+as yet unclassified
+recordRequiredForMetacelloMCVersion: aMetacelloMCVersion
+
+	^aMetacelloMCVersion doRecordRequiredFromArray: self.

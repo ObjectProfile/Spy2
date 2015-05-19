@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2SparseLargeTable",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"arrayClass"
+	],
+	"name" : "S2SparseLargeArray",
+	"type" : "variable"
+}

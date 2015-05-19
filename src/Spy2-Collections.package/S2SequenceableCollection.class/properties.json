@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "TSortable classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "S2SequenceableCollection",
+	"commentStamp" : "",
+	"super" : "S2Collection",
+	"traitcomposition" : "TSortable",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Spy2-Collections"
+}

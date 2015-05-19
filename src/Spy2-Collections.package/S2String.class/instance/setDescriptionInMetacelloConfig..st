@@ -1,0 +1,4 @@
+as yet unclassified
+setDescriptionInMetacelloConfig: aMetacelloConfig
+
+	aMetacelloConfig setDescriptionWithString: self

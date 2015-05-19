@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Array",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"FinalizationDependents",
+		"FinalizationLock",
+		"FinalizationProcess",
+		"FinalizationSemaphore"
+	],
+	"instvars" : [ ],
+	"name" : "S2WeakArray",
+	"type" : "weak"
+}

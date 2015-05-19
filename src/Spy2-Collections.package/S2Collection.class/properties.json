@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"MutexForPicking",
+		"RandomForPicking"
+	],
+	"instvars" : [ ],
+	"name" : "S2Collection",
+	"type" : "normal"
+}
