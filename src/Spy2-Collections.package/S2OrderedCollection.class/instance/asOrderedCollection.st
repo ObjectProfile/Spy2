@@ -1,5 +1,5 @@
 as yet unclassified
 asOrderedCollection 
 
-	self species == OrderedCollection ifTrue: [ ^self ].
+	self species == S2OrderedCollection ifTrue: [ ^self ].
 	^super asOrderedCollection 

@@ -1,3 +1,3 @@
 as yet unclassified
 asArray
-	^ (Array new: self size) replaceFrom: 1 to: self size with: array startingAt: firstIndex.
+	^ (S2Array new: self size) replaceFrom: 1 to: self size with: array startingAt: firstIndex.
