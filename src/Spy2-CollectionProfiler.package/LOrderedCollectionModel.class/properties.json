@@ -5,7 +5,18 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"nbAdd",
+		"nbExpansions",
+		"nbAt",
+		"nbAtPut",
+		"nbDo",
+		"nbCollect",
+		"nbSelect",
+		"creatingMethod",
+		"methodsInvolved",
+		"initialCapacity"
+	],
 	"name" : "LOrderedCollectionModel",
 	"type" : "normal"
 }
