@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Hapao-EmmaReport",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"profiler"
+	],
+	"name" : "HapaoEmmaReport",
+	"type" : "normal"
+}
