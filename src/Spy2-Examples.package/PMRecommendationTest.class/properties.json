@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Spy2-Examples-PMove",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"MainMove"
+	],
+	"instvars" : [ ],
+	"name" : "PMRecommendationTest",
+	"type" : "normal"
+}

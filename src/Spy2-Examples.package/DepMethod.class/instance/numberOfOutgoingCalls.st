@@ -1,3 +1,3 @@
-as yet unclassified
+metrics
 numberOfOutgoingCalls
 	^ self outgoingCalls size

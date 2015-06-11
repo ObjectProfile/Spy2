@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Examples-PMove",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"method",
+		"targetClass",
+		"score"
+	],
+	"name" : "PMRecommendation",
+	"type" : "normal"
+}

@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 hasBeenExecuted
 	^ numberOfExecutions > 0
