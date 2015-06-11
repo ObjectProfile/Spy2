@@ -1,3 +1,3 @@
 accessing
 classes 
-	^ classes values
+	^ classes
