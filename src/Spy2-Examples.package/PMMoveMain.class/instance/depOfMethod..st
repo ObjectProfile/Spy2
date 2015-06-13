@@ -6,12 +6,14 @@ depOfMethod: cm
 	"profiler ifNil: [ ^ cm referencedClasses asArray ]."
 	
 	"We check this if the method belongs to the spy class. If the method is an extension it does not appear"
+	(profiler getSpyClass: cm methodClass)
+		ifNil: [ ^ #() ].
 	classSpy := profiler >> cm methodClass name.
 	(classSpy hasLocalMethod: cm selector)
 		ifFalse: [ ^ #() ]. 
 	methodSpy := classSpy >> cm selector.
 	^ methodSpy hasBeenExecuted 
-		ifTrue: [ methodSpy dependentClasses, cm referencedClasses asArray ]
-		ifFalse: [ 
+		ifTrue: [ ((methodSpy dependentClasses, cm referencedClasses) asSet collect: #theNonMetaClass) asArray ]
+		ifFalse: [
 			methodsToTests add: cm. 
 			#() ] 

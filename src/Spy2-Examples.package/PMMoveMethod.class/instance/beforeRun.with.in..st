@@ -5,4 +5,4 @@ beforeRun: methodName with: listOfArguments in: receiver
 	| caller |
 	caller := self spySender.
 	caller ifNotNil: [ caller addDependentClass: self methodClass ].
-	dependentClasses addAll: (listOfArguments collect: #class)
+	dependentClasses addAll: ((listOfArguments collect: #class) collect: #theNonMetaClass)

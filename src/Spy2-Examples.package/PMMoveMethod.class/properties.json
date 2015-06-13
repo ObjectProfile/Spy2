@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"dependentClasses"
+		"dependentClasses",
+		"incomingClasses"
 	],
 	"name" : "PMMoveMethod",
 	"type" : "normal"
