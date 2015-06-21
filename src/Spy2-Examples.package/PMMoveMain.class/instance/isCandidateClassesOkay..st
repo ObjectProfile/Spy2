@@ -1,3 +1,3 @@
 algorithm
 isCandidateClassesOkay: classes
-	^ classes size >= 3
+	^ classes size >= 1

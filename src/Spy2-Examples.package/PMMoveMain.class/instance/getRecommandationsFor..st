@@ -5,6 +5,7 @@ getRecommandationsFor: classes
 	eligibleClasses := classes select: [ :cls | cls methods size >= 2 ].
 	eligibleClasses := eligibleClasses select: [ :cls | self isClassEligible: cls ].
 	allMethods := (eligibleClasses flatCollect: #methods) select: #isEligible.
+
 	allMethods do: [ :m |
 		c := m methodClass.
 		t := OrderedCollection new.

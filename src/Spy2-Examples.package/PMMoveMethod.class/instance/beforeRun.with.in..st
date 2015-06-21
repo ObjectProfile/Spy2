@@ -4,5 +4,7 @@ beforeRun: methodName with: listOfArguments in: receiver
 	 Insert here the instrumentation you would like to perform during the profiling."
 	| caller |
 	caller := self spySender.
-	caller ifNotNil: [ caller addDependentClass: self methodClass ].
+	caller ifNotNil: [ 
+		caller addDependentClass: self methodClass.
+		incomingClasses add: caller classSpy theClass ].
 	dependentClasses addAll: ((listOfArguments collect: #class) collect: #theNonMetaClass)

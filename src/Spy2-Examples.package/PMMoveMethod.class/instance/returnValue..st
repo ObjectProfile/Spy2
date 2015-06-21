@@ -1,3 +1,4 @@
 hooks
 returnValue: value
-	dependentClasses add: value class theNonMetaClass
+	value class ~~ self classSpy theClass
+		ifTrue: [ dependentClasses add: value class theNonMetaClass ]
