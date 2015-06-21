@@ -1,3 +1,3 @@
 enumerating
 classesDo: aBlockOrSymbol
-	^ self classes do: aBlockOrSymbol
+	^ classes do: aBlockOrSymbol
