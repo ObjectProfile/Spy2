@@ -2,7 +2,6 @@ SystemOrganization addCategory: #'Spy2-Examples'!
 SystemOrganization addCategory: 'Spy2-Examples-CollectionContract'!
 SystemOrganization addCategory: 'Spy2-Examples-Counting'!
 SystemOrganization addCategory: 'Spy2-Examples-Diff'!
-SystemOrganization addCategory: 'Spy2-Examples-Hapao2'!
 SystemOrganization addCategory: 'Spy2-Examples-MSP1'!
 SystemOrganization addCategory: 'Spy2-Examples-MSP2'!
 SystemOrganization addCategory: 'Spy2-Examples-MemoryBlueprint'!
