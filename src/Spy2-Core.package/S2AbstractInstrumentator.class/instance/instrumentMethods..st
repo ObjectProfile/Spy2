@@ -1,5 +1,5 @@
 private - action
-instrumentMethods: ringMethods 
+instrumentMethods: ringMethods
 	ringMethods do: [ :ringMethod | | method |
 		ringMethod compiledMethod ifNotNil: [ 
 			self methodPlugins do: [:plugin | plugin installOn: ringMethod compiledMethod ].
