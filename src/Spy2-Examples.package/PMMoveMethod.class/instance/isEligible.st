@@ -1,3 +1,3 @@
 testing
 isEligible
-	^ self originalMethod isEligible and: [ (self incomingClasses includes: self classSpy theClass) not ]
+	^ self originalMethod isEligible and: [ self isNotCalledByMyClass ]
