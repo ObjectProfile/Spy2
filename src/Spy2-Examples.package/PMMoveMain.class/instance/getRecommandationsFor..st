@@ -4,7 +4,7 @@ getRecommandationsFor: classes
 	recommandations := OrderedCollection new.
 	eligibleClasses := classes select: [ :cls | cls methods size >= 2 ].
 	eligibleClasses := eligibleClasses select: [ :cls | self isClassEligible: cls ].
-	allMethods := (eligibleClasses flatCollect: #methods) select: #isEligible.
+	allMethods := (eligibleClasses flatCollect: #methods) select: [ :cm | (self profiler >> cm methodClass name >> cm selector) isEligible ].
 
 	allMethods do: [ :m |
 		c := m methodClass.
@@ -15,6 +15,7 @@ getRecommandationsFor: classes
 		].
 		(self isCandidateClassesOkay: t) ifTrue:
 			[ cp := self bestClass: m with: t.
-			recommandations add: (PMRecommendation targetClass: cp method: m) ].
+			cp ifNotNil: 
+				[ recommandations add: (PMRecommendation targetClass: cp method: m) ] ].
 	].
 	^ recommandations
