@@ -1,18 +1,22 @@
 as yet unclassified
 generatePackage: aPackage on: aStream
-	| items |
-	aStream tab: 3; nextPutAll: '<package name="'; nextPutAll: (self encode: (aPackage packageName copyReplaceAll: '-' with: '.')); nextPutAll: '">'; nextPut: Character lf.
+	| classes methods |
+	classes := aPackage classes.
+	methods := aPackage allMethods.
+	aStream tab: 3; nextPutAll: '<package name="'; 
+		nextPutAll: (self encode: (aPackage packageName copyReplaceAll: '-' with: '.')); nextPutAll: '">'; nextPut: Character lf.
 	self
 		generateType: 'class' indent: 4
-		total: (items := aPackage allClasses asSet) size
-		actual: ((profiler allMethods select: #isCovered thenCollect: [:cls | cls classSpy baseclassSpy]) asSet
-			count: [ :each | items includes: each ])
+		total: classes size
+		actual: (classes count: #isPartiallyCovered)
 		on: aStream.
 	self
 		generateType: 'method' indent: 4
-		total: (items := aPackage allMethods asSet) size
-		actual: ((profiler allMethods select: #isCovered) count: [ :each | items includes: each ])
+		total: methods size
+		actual: (methods count: #isCovered)
 		on: aStream.
+		
 	aPackage classes
-		do: [ :class | self generatePackage: aPackage class: class on: aStream ].
+		do: [ :class | self generatePackage: aPackage classAndMetaclass: class on: aStream ].
+		
 	aStream tab: 3; nextPutAll: '</package>'; nextPut: Character lf

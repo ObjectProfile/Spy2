@@ -4,6 +4,6 @@ generatePackage: aPackage method: aMethod on: aStream
 	self
 		generateType: 'method' indent: 6
 		total: 1
-		actual: (((profiler allMethods select: #isCovered) includes: aMethod) ifTrue: [ 1 ] ifFalse: [ 0 ])
+		actual: aMethod isCovered asBit
 		on: aStream.
 	aStream tab: 5; nextPutAll: '</method>'; nextPut: Character lf
