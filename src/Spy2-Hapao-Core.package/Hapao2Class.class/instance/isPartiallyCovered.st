@@ -1,3 +1,3 @@
 testing
 isPartiallyCovered
-	^ self methods anySatisfy: #isCovered
+	^ self allMethods isEmpty or: [ self allMethods anySatisfy: #isCovered ]
