@@ -4,4 +4,5 @@ isClassEligible: cls
 	| spyClass |
 	spyClass := self profiler getSpyClass: cls.
 	spyClass ifNil: [ ^ false ].
+	spyClass isTestClass ifTrue: [ ^ false ].
 	^ (spyClass hasRatioOfExecutedMethodsGreaterthan: 0.75) or: [ spyClass nonExecutedMethodDoNotCallExecutedMethods ]
