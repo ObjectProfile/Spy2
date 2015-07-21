@@ -5,9 +5,9 @@ addMethodEdges: each scope: mths view: view
 			view: view.
 	sb shape shape: (RTLine new attachPoint: RTVerticalAttachPoint instance).
 
+	sb objects: each allMethods.
 	edges := sb
-					objects: each allMethods
-					from: #yourself 
+					connectFrom: #yourself 
 					toAll: #selfCallers.
 
 	"edges do: #pushBack."
