@@ -11,7 +11,7 @@ example06
 		profile: [| b ds |
 b := RTGrapher new.
 b extent: 400 @ 400.
-ds := RTDataSet new.
+ds := RTData new.
 ds dotShape cross color: (Color red alpha: 0.3).
 ds points: (RTShape withAllSubclasses flatCollect: #rtmethods).
 ds x: #numberOfLinesOfCode.
