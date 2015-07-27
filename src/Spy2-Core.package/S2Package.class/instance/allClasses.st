@@ -1,3 +1,0 @@
-accessing
-allClasses
-	^ classes values

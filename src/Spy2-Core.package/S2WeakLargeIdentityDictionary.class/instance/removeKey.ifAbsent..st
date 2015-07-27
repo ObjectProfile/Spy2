@@ -2,6 +2,7 @@ as yet unclassified
 removeKey: key ifAbsent: aBlock
 	|item hash|
 	hash := key largeIdentityHash + 1.
+	self cleanFirstTableItemsAt: hash.
 	item := (items at: hash + 1).
 	"Need to remove first element"
 	(item isNotNullItem and: [ item key == key ]) ifTrue: [ 

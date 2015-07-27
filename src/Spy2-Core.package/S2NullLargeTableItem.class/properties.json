@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Collection",
+	"super" : "Object",
 	"category" : "Spy2-Core-Utils",
 	"classinstvars" : [ ],
 	"pools" : [ ],

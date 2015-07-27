@@ -1,7 +1,7 @@
 creating - metamodel
 createSpyMethod: method
 
-	|spyMethod spyClass spyPackage | 
+	|spyMethod spyClass spyPackage |
 	(method getSpy: self) ifNotNil: [ :m | ^ m ].
 	spyClass := (method methodClass createSpy: self).
 	spyPackage := ((method package ifNil: [method methodClass package]) createSpy: self).

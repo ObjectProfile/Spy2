@@ -1,12 +1,14 @@
 as yet unclassified
 at: key put: value
-	|item prevItem|
-	item := (items at: key largeIdentityHash + 1).
+	|item prevItem hash|
+	hash := key largeIdentityHash + 1.
+	self cleanFirstTableItemsAt: hash.
+	item := (items at: hash).
 	"No elements in the list"
 	item isNullItem ifTrue: [ 
 		tally := tally + 1.
 		items 
-			at: key 
+			at: hash 
 			put: (S2WeakLargeTableItem new
 				key: key;
 				value: value;
@@ -15,6 +17,7 @@ at: key put: value
 		^ value ].
 	"Usual case"
 	[ item isNotNullItem ] whileTrue: [ 
+		self cleanTableItemsFrom: item.
 		item key == key ifTrue: [ 
 			item value: value.
 			^ value ].

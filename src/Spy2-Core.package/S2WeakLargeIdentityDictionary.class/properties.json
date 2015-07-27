@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"tally",
-		"tallies",
 		"items"
 	],
 	"name" : "S2WeakLargeIdentityDictionary",
