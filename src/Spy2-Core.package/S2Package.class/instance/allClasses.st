@@ -1,3 +1,3 @@
 accessing
-classes 
+allClasses
 	^ classes values
