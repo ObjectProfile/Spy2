@@ -1,3 +1,0 @@
-delegation
-endPC
-	^ originalMethod endPC

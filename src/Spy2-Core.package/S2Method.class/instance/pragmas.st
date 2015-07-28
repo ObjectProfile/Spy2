@@ -1,3 +1,0 @@
-delegation
-pragmas
-	^ originalMethod pragmas

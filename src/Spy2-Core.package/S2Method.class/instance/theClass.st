@@ -1,3 +1,3 @@
-delegation
+accessing
 theClass
 	^ originalMethod methodClass

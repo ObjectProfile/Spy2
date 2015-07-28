@@ -1,3 +1,0 @@
-delegation
-methodClass
-	^ originalMethod methodClass
