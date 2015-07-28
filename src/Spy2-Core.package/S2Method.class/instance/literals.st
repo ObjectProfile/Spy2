@@ -1,3 +1,3 @@
-delegation
+accessing - computed
 literals
 	^ originalMethod literals

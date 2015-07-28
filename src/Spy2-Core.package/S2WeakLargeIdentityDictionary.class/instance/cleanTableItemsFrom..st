@@ -1,7 +1,7 @@
 as yet unclassified
 cleanTableItemsFrom: startingItem
 	|item|
-	item := startingItem.
+	item := startingItem next.
 	[ item isNotNullItem and: [ item key == nil ] ] whileTrue: [ 
 		tally := tally - 1.
 		item := item next ].
