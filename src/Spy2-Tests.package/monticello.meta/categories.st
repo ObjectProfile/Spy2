@@ -6,3 +6,4 @@ SystemOrganization addCategory: 'Spy2-Tests-Sender-Stub'!
 SystemOrganization addCategory: 'Spy2-Tests-Stub'!
 SystemOrganization addCategory: 'Spy2-Tests-Utility'!
 SystemOrganization addCategory: 'Spy2-Tests-Utility-Tests'!
+SystemOrganization addCategory: 'Spy2-Tests-UtilsTests'!

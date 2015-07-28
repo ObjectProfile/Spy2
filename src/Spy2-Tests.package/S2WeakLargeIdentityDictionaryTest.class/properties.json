@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "Spy2-Tests-UtilsTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dict"
+	],
+	"name" : "S2WeakLargeIdentityDictionaryTest",
+	"type" : "normal"
+}
