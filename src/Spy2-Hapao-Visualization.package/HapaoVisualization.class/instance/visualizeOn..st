@@ -28,7 +28,7 @@ visualizeOn: view
 			singleMethods := mths select: [ :m | m connectedEdges isEmpty ].
 			singleMethods := singleMethods sortedAs: [ :el | el model numberOfLinesOfCode ].
 			singleMethods := singleMethods asGroup.
-			RTGridLayout on: singleMethods.
+			RTFlowLayout on: singleMethods.
 			TRConstraint move: singleMethods onTheRightOf: connectedMethods.
 			singleMethods translateBy: 5 @ 0.
 			
@@ -55,7 +55,7 @@ visualizeOn: view
 	singleClassesUT := classElementsUT select: [ :m | m connectedEdges isEmpty ].
 	singleClassesUT := singleClassesUT sortedAs: [ :el | el model numberOfMethods ].
 	singleClassesUT := singleClassesUT asGroup.
-	RTGridLayout on: singleClassesUT.
+	RTFlowLayout on: singleClassesUT.
 	
 	
 	"NOT UNIT TEST"
@@ -68,7 +68,7 @@ visualizeOn: view
 	singleClassesNotUT := classElementsNotUT select: [ :m | m connectedEdges isEmpty ].
 	singleClassesNotUT := singleClassesNotUT sortedAs: [ :el | el model numberOfMethods ].
 	singleClassesNotUT := singleClassesNotUT asGroup.
-	RTGridLayout on: singleClassesNotUT.
+	RTFlowLayout on: singleClassesNotUT.
 	
 	"Layout the whole thing!"
 	RTHorizontalLineLayout on: { connectedClassesUT . singleClassesUT . connectedClassesNotUT . singleClassesNotUT }.
