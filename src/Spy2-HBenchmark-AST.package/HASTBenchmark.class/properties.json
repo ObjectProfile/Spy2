@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Benchmark",
+	"category" : "Spy2-HBenchmark-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"methodsSources"
+	],
+	"name" : "HASTBenchmark",
+	"type" : "normal"
+}
