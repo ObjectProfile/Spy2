@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Benchmark",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"profiler"
+	],
+	"name" : "S2Benchmark",
+	"type" : "normal"
+}
