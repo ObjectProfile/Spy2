@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Package",
+	"category" : "Cerebro",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CerebroPackage",
+	"type" : "normal"
+}

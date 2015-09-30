@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Class",
+	"category" : "Cerebro",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CerebroClass",
+	"type" : "normal"
+}

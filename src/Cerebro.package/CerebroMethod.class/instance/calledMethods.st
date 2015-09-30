@@ -1,0 +1,3 @@
+hooks
+calledMethods
+	^ dictionary keys

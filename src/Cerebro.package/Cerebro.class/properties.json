@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "Cerebro",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"trace"
+	],
+	"name" : "Cerebro",
+	"type" : "normal"
+}

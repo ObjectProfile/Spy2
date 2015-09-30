@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Cerebro",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dictionary",
+		"hasBeenExecuted"
+	],
+	"name" : "CerebroMethod",
+	"type" : "normal"
+}
