@@ -4,6 +4,7 @@ visualizeLegendOn: view
 
 	| b |
 	b := RTLegendBuilder new.
+	b onDemand.
 	b view: view.
 	b addText: 'Hapao show the coverage on which you have run it'.
 	profiler unitTestResult ifNotNil: 
