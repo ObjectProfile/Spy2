@@ -1,5 +1,5 @@
-menu
-hapaoIconContents
+icons
+iconContents
 	"Private - Method generated with the content of the file /Users/alexandrebergel/Desktop/hapao.png"
 	^ 'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dE
 AP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sBEhQEBXx0ys8AAAAZ
