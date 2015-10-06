@@ -11,6 +11,7 @@ SystemOrganization addCategory: 'Spy2-Examples-PMove'!
 SystemOrganization addCategory: 'Spy2-Examples-SimilarityTest'!
 SystemOrganization addCategory: 'Spy2-Examples-StateAccessProfiler'!
 SystemOrganization addCategory: 'Spy2-Examples-StringProfiler'!
+SystemOrganization addCategory: 'Spy2-Examples-Tracer'!
 SystemOrganization addCategory: 'Spy2-Examples-Type'!
 SystemOrganization addCategory: 'Spy2-Examples-UndertestedMethods'!
 SystemOrganization addCategory: 'Spy2-Examples-Visibility'!

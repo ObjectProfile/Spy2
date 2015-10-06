@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "Spy2-Examples-Tracer",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"trace"
+	],
+	"name" : "Tracer",
+	"type" : "normal"
+}
