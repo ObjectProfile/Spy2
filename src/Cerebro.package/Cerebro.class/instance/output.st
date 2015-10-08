@@ -3,14 +3,14 @@ output
 
 | s str |
 s := WriteStream on: String new.
-self do: [ :m |
+self trace do: [ :m |
 	m dictionary associationsDo: [ :assoc | 
 		s nextPutAll: m asString.
 		s nextPutAll: ','.
 		s nextPutAll: assoc key asString. 
 		s nextPutAll: ','.
 		s nextPutAll: assoc value asString.
-		s cr
+		s crlf
 	].
 ].
 s contents.

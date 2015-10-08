@@ -27,4 +27,4 @@ b view addMenu: 'Play' callback: [
 	anim inView: b view.
 	 ].
 "
-b view.
+^ b view.
