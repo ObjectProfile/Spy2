@@ -1,3 +1,3 @@
 utils
 packageForName: name
-	^ S2Instrumentator stub gatherPackageForName: name
+	^ S2Gatherer uniqueInstance gather packageForName: name

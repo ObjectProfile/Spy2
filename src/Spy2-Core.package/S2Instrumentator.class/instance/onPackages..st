@@ -1,6 +1,6 @@
 generic api
 onPackages: pacakgeCollection
 	self 
-		methods: (self gatherMethodsForPackages: pacakgeCollection)
-		classes: (self gatherClassesForPackages: pacakgeCollection)
+		methods: (self gather methodsForPackages: pacakgeCollection)
+		classes: (self gather classesForPackages: pacakgeCollection)
 		packages: pacakgeCollection copy
