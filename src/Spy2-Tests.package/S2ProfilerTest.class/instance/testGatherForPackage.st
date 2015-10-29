@@ -2,7 +2,7 @@ test - gather
 testGatherForPackage
 
 	| methods |
-	methods := (S2Instrumentator new gatherClassesForPackage: (RPackage organizer packageNamed: 'Spy2-Scenario')) flatCollect: #methods.
+	methods := (S2Gatherer uniqueInstance classesForPackage: (RPackage organizer packageNamed: 'Spy2-Scenario')) flatCollect: #methods.
 	self assert: methods asSet size equals: 8.
 	self 
 		assert: (methods collect: #methodClass ) asSet 

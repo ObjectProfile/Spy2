@@ -1,7 +1,7 @@
 test - gather
 testGatherForClasses
 	| methods |
-	methods := S2Instrumentator new gatherMethodsForClasses: {S2pyA . S2pyDummyTest}.
+	methods := S2Gatherer uniqueInstance methodsForClasses: {S2pyA . S2pyDummyTest}.
 	self assert: methods asSet size equals: 7.
 	self 
 		assert: (methods collect: #methodClass ) asSet 

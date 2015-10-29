@@ -2,7 +2,7 @@ test - gather
 testGatherForClassCategory
 
 	| methods |
-	methods := (S2Instrumentator new gatherClassesForClassCategory: 'Spy2-Scenario') flatCollect: #methods.
+	methods := (S2Gatherer uniqueInstance classesForClassCategory: 'Spy2-Scenario') flatCollect: #methods.
 	self assert: methods asSet size equals: 8.
 	self 
 		assert: (methods collect: #methodClass ) asSet 
