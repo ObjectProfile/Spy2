@@ -4,7 +4,9 @@
 	"category" : "Spy2-Core-Instrumentator",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Instance"
+	],
 	"instvars" : [
 		"classes",
 		"methods",

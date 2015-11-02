@@ -3,9 +3,9 @@ removePackages: packageCollection
 	^ S2Instrumentator new
 		methods: 
 			(self methods 
-				difference: ((self gather methodsForPackages: packageCollection) 
+				difference: ((self gatherMethodsForPackages: packageCollection) 
 										collect: #asFullRingDefinition))
 		classes: (self classes 
-			difference: ((self gather classesForPackages: packageCollection) 
+			difference: ((self gatherClassesForPackages: packageCollection) 
 										collect: #asFullRingDefinition))
 		packages: (self packages difference: (packageCollection collect: #asFullRingDefinition))

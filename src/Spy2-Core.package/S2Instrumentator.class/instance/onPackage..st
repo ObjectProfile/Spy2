@@ -1,6 +1,6 @@
 generic api
 onPackage: package
 	self 
-		methods: (self gather methodsForPackage: package)
-		classes: (self gather classesForPackage: package)
+		methods: (self gatherMethodsForPackage: package)
+		classes: (self gatherClassesForPackage: package)
 		packages: { package }

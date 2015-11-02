@@ -1,8 +1,8 @@
 generic api
 onPackagesMatching: regex
 	| packageCollection |
-	packageCollection := self gather packagesForRegex: regex.
+	packageCollection := self gatherPackagesForRegex: regex.
 	self 
-		methods: (self gather methodsForPackages: packageCollection)
-		classes: (self gather classesForPackages: packageCollection)
+		methods: (self gatherMethodsForPackages: packageCollection)
+		classes: (self gatherClassesForPackages: packageCollection)
 		packages: packageCollection

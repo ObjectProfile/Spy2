@@ -1,4 +1,4 @@
-as yet unclassified
-packagesForRegexExpressions: regexExpressions
+utils - gathering
+gatherPackagesForRegexExpressions: regexExpressions
 	^ (regexExpressions flatCollect: [ :regex | 
 			RPackage organizer packages select: [:p | regex match: (p name asString)] ]) asSet

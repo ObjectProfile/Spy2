@@ -1,8 +1,8 @@
 generic api
 onPackagesMatchingExpressions: expressions
 	| packageCollection |
-	packageCollection := self gather packagesForRegexExpressions: expressions.
+	packageCollection := self gatherPackagesForRegexExpressions: expressions.
 	self 
-		methods: (self gather methodsForPackages: packageCollection)
-		classes: (self gather classesForPackages: packageCollection)
+		methods: (self gatherMethodsForPackages: packageCollection)
+		classes: (self gatherClassesForPackages: packageCollection)
 		packages: packageCollection

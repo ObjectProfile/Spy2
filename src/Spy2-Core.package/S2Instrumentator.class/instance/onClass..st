@@ -1,5 +1,5 @@
 generic api
 onClass: class
 	self 
-		methods: (self gather methodsForClass: class)
+		methods: (self gatherMethodsForClass: class)
 		classes: { class }

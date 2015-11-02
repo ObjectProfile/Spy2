@@ -1,7 +1,7 @@
 generic api
 onClassCategories: categories
 	|classCollection|
-	classCollection := self gather classesForClassCategories: categories.
+	classCollection := self gatherClassesForClassCategories: categories.
 	self 
-		methods: (self gather methodsForClasses: classCollection)
+		methods: (self gatherMethodsForClasses: classCollection)
 		classes: classCollection
