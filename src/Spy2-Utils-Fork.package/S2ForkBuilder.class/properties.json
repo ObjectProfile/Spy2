@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Utils-Fork",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"UniqueInstance"
+	],
+	"instvars" : [ ],
+	"name" : "S2ForkBuilder",
+	"type" : "normal"
+}

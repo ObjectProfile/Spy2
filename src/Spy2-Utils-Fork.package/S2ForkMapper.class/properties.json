@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Utils-Fork",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"models",
+		"mapping"
+	],
+	"name" : "S2ForkMapper",
+	"type" : "normal"
+}
