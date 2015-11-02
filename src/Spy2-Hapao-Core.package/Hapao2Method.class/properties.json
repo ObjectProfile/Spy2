@@ -12,7 +12,8 @@
 	"instvars" : [
 		"hasBeenExecuted",
 		"calls",
-		"callers"
+		"callers",
+		"testedMethods"
 	],
 	"name" : "Hapao2Method",
 	"type" : "normal"

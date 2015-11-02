@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"currentTestMethod"
+	],
 	"name" : "Hapao2",
 	"type" : "normal"
 }
