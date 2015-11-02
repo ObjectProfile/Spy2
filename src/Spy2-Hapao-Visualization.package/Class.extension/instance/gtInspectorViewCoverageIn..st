@@ -11,4 +11,5 @@ gtInspectorViewCoverageIn: composite
 			referencingUnitTest := referencingUnitTest select: [ :c | c inheritsFrom: TestCase ].
 			referencingUnitTest ifNotEmpty: 
 				[(Hapao2 runTestsForClasses: referencingUnitTest , { classToMeasureCoverage })
-					visualizeOn: view ] ]
+					visualizeOn: view.
+					view @ RTDoubleScrollBar ] ]
