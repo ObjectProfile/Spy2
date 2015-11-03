@@ -1,15 +1,13 @@
 {
-	"commentStamp" : "AlejandroInfante 12/31/2014 16:15",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Spy2-Core-Instrumentator",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
-		"MethodBlacklist"
+		"UniqueInstance"
 	],
-	"instvars" : [
-		"profiler"
-	],
-	"name" : "S2AbstractInstrumentator",
+	"instvars" : [ ],
+	"name" : "S2Gatherer",
 	"type" : "normal"
 }

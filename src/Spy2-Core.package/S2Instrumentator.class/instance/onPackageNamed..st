@@ -3,6 +3,6 @@ onPackageNamed: packageName
 	| package |
 	package := RPackage organizer packageNamed: packageName.
 	self
-		methods: (self gatherMethodsForPackage: package)
-		classes: (self gatherClassesForPackage: package)
+		methods: (self gather methodsForPackage: package)
+		classes: (self gather classesForPackage: package)
 		packages: { package }

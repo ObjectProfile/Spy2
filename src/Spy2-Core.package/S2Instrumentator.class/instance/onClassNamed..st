@@ -3,5 +3,5 @@ onClassNamed: className
 	| class |
 	class := Smalltalk at: className.
 	self
-		methods: (self gatherMethodsForClass: class)
+		methods: (self gather methodsForClass: class)
 		classes: { class }
