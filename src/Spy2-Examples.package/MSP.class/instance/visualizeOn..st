@@ -1,8 +1,8 @@
 visualization
 visualizeOn: view
 
-	| b normalizer  doubleBar methodsToRender callGraphElements charterElements legendBuilder methodsToRenderAsElements |
-	b := RTMondrianViewBuilder new.
+	| b normalizer  doubleBar methodsToRender callGraphElements charterElements legendBuilder |
+	b := RTMondrian new.
 	b view: view.
 	
 	normalizer := RTMultiLinearColorForIdentity new objects: (self allClasses collect: #theClass).
@@ -20,7 +20,6 @@ visualizeOn: view
 	b nodes: methodsToRender forEach: [ :m |
 		self isReadyForComparison 
 		ifTrue: [ 
-			self haltIf: [ m selector == #withRuler: ].
 			b shape rectangle 
 						if: [ :assoc | (m doIInstantiate: assoc key) not ] borderColor: Color transparent;
 						if: [ :assoc | (m doIInstantiate: assoc key) and: [ (m previousMethod instancesOf: assoc key) < (m instancesOf: assoc key) ] ] borderColor: Color red;
@@ -31,6 +30,8 @@ visualizeOn: view
 					
 		ifFalse: [ 
 			b shape rectangle 
+						borderWidth: 2;
+						borderColor: Color gray;
 						if: [ :assoc | (m doIInstantiate: assoc key) not ] borderColor: Color transparent;
 						fillColor: [ :assoc | normalizer rtValue: assoc key ];
 						width: [ :assoc | (assoc value + 1) log * 8 ];
@@ -40,7 +41,10 @@ visualizeOn: view
 		b flowLayout gapSize: 2.
 	].
 
-	b edges: methodsToRender from: #yourself toAll: [ :m | m calledMethods sortedAs: #selector ].
+	"b edges: methodsToRender from: #yourself toAll: [ :m | m calledMethods sortedAs: #selector ]."
+	b edges 
+		objects: methodsToRender;
+		connectFrom: #yourself toAll: [ :m | m calledMethods sortedAs: #selector ].
 	b treeLayout.
 	
 	self setMenuOn: b view.
@@ -50,7 +54,6 @@ visualizeOn: view
 	"----- Charter -----"
 	"-------------------"
 	callGraphElements := b view elements.
-	methodsToRenderAsElements := b view elementsFromModels: methodsToRender.
 	doubleBar := RTDoubleBarBuilder new.
 	doubleBar view: b view. 
 
