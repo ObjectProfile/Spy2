@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-TestSurgeon",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tests"
+	],
+	"name" : "TSurgeonMethod",
+	"type" : "normal"
+}

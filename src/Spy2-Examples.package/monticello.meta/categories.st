@@ -12,6 +12,7 @@ SystemOrganization addCategory: 'Spy2-Examples-PrimitiveTracking'!
 SystemOrganization addCategory: 'Spy2-Examples-SimilarityTest'!
 SystemOrganization addCategory: 'Spy2-Examples-StateAccessProfiler'!
 SystemOrganization addCategory: 'Spy2-Examples-StringProfiler'!
+SystemOrganization addCategory: 'Spy2-Examples-TestSurgeon'!
 SystemOrganization addCategory: 'Spy2-Examples-Tracer'!
 SystemOrganization addCategory: 'Spy2-Examples-Type'!
 SystemOrganization addCategory: 'Spy2-Examples-UndertestedMethods'!
