@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	tests := Set new
+	tests := Set new.
+	callingMethods := Set new
