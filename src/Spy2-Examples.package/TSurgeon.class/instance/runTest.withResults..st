@@ -1,4 +1,4 @@
 private - running tests
 runTest: test withResults: results
 	super runTest: test withResults: results.
-	currentTest := test
+	currentTest := (self getSpy: test class >> test selector)

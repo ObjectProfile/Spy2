@@ -5,5 +5,5 @@ beforeRun: methodName with: listOfArguments in: receiver
 	
 	spySe := self spySender.
 	spySe ifNotNil: [ 
-			self haltIf: [ spySe selector == #testCompositeShape ] ].
-	spySe ifNotNil: [ spySe callingMethods add: self ]
+		self addIncomingCalls: spySe.
+		spySe addOutgoingCalls: self ]
