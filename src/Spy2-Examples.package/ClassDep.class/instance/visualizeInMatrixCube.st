@@ -17,5 +17,6 @@ profile depFrames doWithIndex: [ :f :timeIndex |
 		]
 	]
 ].
+cube finalizeStructure.
 cube draw
 "
