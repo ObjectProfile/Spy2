@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Examples-ClassDep",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"methodDependencies",
+		"classDependencies"
+	],
+	"name" : "ClassDepFrame",
+	"type" : "normal"
+}

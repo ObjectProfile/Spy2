@@ -1,4 +1,5 @@
 SystemOrganization addCategory: #'Spy2-Examples'!
+SystemOrganization addCategory: 'Spy2-Examples-ClassDep'!
 SystemOrganization addCategory: 'Spy2-Examples-CollectionContract'!
 SystemOrganization addCategory: 'Spy2-Examples-Counting'!
 SystemOrganization addCategory: 'Spy2-Examples-Diff'!
