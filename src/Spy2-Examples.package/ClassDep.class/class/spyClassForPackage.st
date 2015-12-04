@@ -1,3 +1,0 @@
-hooks
-spyClassForPackage
-	 ^ ClassDepPackage

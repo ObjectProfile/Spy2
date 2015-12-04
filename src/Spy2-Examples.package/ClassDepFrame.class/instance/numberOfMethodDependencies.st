@@ -1,3 +1,0 @@
-accessing
-numberOfMethodDependencies
-	^ methodDependencies size

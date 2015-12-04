@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Class",
+	"category" : "Spy2-Examples-Bucket",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BucketClass",
+	"type" : "normal"
+}

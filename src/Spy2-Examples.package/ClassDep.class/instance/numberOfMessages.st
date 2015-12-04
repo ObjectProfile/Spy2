@@ -1,3 +1,0 @@
-accessing
-numberOfMessages
-	^ numberOfMessages
