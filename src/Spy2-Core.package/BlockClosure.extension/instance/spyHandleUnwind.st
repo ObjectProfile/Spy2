@@ -4,4 +4,6 @@ spyHandleUnwind
 		Halt isHaltOnceEnabled 
 			ifTrue: [ 
 				Halt disableHaltOnce.
-				ex pass ] ].
+				ex pass ]
+			ifFalse: [ 
+				ex return: nil ] ].
