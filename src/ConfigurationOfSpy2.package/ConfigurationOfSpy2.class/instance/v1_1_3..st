@@ -11,7 +11,7 @@ v1_1_3: spec
 			package: 'Spy2-Scenario' with: 'Spy2-Scenario-AlejandroInfante.1';
 			package: 'Spy2-Tests' with: 'Spy2-Tests-AlejandroInfante.7';
 			package: 'GT-Spy2-Inspector' with: 'GT-Spy2-Inspector-AlexandreBergel.12';
-			package: 'Spy2-Examples' with: 'Spy2-Examples-AlexandreBergel.28';
+			package: 'Spy2-Examples' with: 'Spy2-Examples-AlexandreBergel.29';
 			package: 'Spy2-Hapao-Core' with: 'Spy2-Hapao-Core-AlexandreBergel.9';
 			package: 'Spy2-Hapao-Visualization' with: 'Spy2-Hapao-Visualization-AlexandreBergel.12';
 			package: 'Spy2-Hapao-EmmaReport' with: 'Spy2-Hapao-EmmaReport-AlejandroInfante.2']
