@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-ClassDep",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cacheDep"
+	],
+	"name" : "ClassDepMethod",
+	"type" : "normal"
+}

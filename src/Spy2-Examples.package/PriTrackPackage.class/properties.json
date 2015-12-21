@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Package",
+	"category" : "Spy2-Examples-PrimitiveTracking",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PriTrackPackage",
+	"type" : "normal"
+}

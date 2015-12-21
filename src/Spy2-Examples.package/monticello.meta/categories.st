@@ -1,5 +1,6 @@
 SystemOrganization addCategory: #'Spy2-Examples'!
 SystemOrganization addCategory: 'Spy2-Examples-Bucket'!
+SystemOrganization addCategory: 'Spy2-Examples-ClassDep'!
 SystemOrganization addCategory: 'Spy2-Examples-CollectionContract'!
 SystemOrganization addCategory: 'Spy2-Examples-Counting'!
 SystemOrganization addCategory: 'Spy2-Examples-Diff'!
@@ -9,9 +10,11 @@ SystemOrganization addCategory: 'Spy2-Examples-MemoryBlueprint'!
 SystemOrganization addCategory: 'Spy2-Examples-MethodDependencies'!
 SystemOrganization addCategory: 'Spy2-Examples-Multistage2TMP'!
 SystemOrganization addCategory: 'Spy2-Examples-PMove'!
+SystemOrganization addCategory: 'Spy2-Examples-PrimitiveTracking'!
 SystemOrganization addCategory: 'Spy2-Examples-SimilarityTest'!
 SystemOrganization addCategory: 'Spy2-Examples-StateAccessProfiler'!
 SystemOrganization addCategory: 'Spy2-Examples-StringProfiler'!
+SystemOrganization addCategory: 'Spy2-Examples-TestSurgeon'!
 SystemOrganization addCategory: 'Spy2-Examples-Tracer'!
 SystemOrganization addCategory: 'Spy2-Examples-Type'!
 SystemOrganization addCategory: 'Spy2-Examples-UndertestedMethods'!
