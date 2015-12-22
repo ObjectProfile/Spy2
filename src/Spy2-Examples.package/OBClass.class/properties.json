@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Class",
+	"category" : "Spy2-Examples-Omniscient",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OBClass",
+	"type" : "normal"
+}

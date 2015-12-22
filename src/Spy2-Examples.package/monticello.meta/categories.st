@@ -9,6 +9,7 @@ SystemOrganization addCategory: 'Spy2-Examples-MSP2'!
 SystemOrganization addCategory: 'Spy2-Examples-MemoryBlueprint'!
 SystemOrganization addCategory: 'Spy2-Examples-MethodDependencies'!
 SystemOrganization addCategory: 'Spy2-Examples-Multistage2TMP'!
+SystemOrganization addCategory: 'Spy2-Examples-Omniscient'!
 SystemOrganization addCategory: 'Spy2-Examples-PMove'!
 SystemOrganization addCategory: 'Spy2-Examples-PrimitiveTracking'!
 SystemOrganization addCategory: 'Spy2-Examples-SimilarityTest'!

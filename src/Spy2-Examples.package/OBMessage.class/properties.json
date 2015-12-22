@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Examples-Omniscient",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"index",
+		"object",
+		"objectCopy",
+		"selector",
+		"argumentsCopy"
+	],
+	"name" : "OBMessage",
+	"type" : "normal"
+}
