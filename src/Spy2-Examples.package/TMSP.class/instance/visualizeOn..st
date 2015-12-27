@@ -2,7 +2,7 @@ visualization
 visualizeOn: v
 	"v is a Roassal view"
 	| b |
-	b := RTMondrianViewBuilder new.
+	b := RTMondrian new.
 	b view: v.
 	
 	b nodes: self monitoredClasses forEach: [ :pharoCls |
@@ -10,6 +10,6 @@ visualizeOn: v
 			size: #value.
 			
 		b nodes: (self >> pharoCls name) groups.
-		b flowLayout.
+		b layout flow.
 	].
 	b build.

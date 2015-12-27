@@ -4,15 +4,15 @@ visualizeOn: view
 	| b |
 	view @ RTDraggableView.
 	
-	b := RTMondrianViewBuilder new.
+	b := RTMondrian new.
 	b view: view.
 	b nodes: self allExecutedClasses forEach: [ :aClass |
 		b shape rectangle size: [ :m | m numberOfExecutions sqrt ].
 		b interaction fixedPopupText: [ :m | m signature ].
 		b nodes: aClass allRunMethods.
-		b gridLayout.
+		b layout grid.
 	].
 	b shape orthoVerticalLine.
-	b edgesFrom: #superclass.
-	b treeLayout.
-	b applyLayout.
+	b edges connectFrom: #superclass.
+	b layout tree.
+	b build

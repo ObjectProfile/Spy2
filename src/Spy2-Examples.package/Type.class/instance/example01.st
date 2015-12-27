@@ -1,8 +1,6 @@
 example
-example01
-	"
-	self new example01
-	"
+example01	
+	<script: 'Type new example01 inspect'>
 	^ (Type
 			profile: [  RTRoassalExample new exampleLabelledEncapsulating ]
-			onPackagesNamed: { 'Roassal2' . 'Trachel' }) inspect
+			onPackagesNamed: { 'Roassal2' . 'Trachel' })
