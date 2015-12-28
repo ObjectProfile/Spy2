@@ -2,4 +2,5 @@ initialization
 initialize
 	super initialize.
 	methodDependencies := Set new.
-	classDependencies := Set new
+	classDependencies := Set new.
+	index := 0
