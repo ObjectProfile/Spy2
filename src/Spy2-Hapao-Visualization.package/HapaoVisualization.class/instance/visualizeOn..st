@@ -22,7 +22,7 @@ visualizeOn: view
 				
 			"Connected methods"
 			connectedMethods := mths select: [ :m | m connectedEdges notEmpty ].
-			RTTreeLayout on: connectedMethods edges: edges.	
+			RTSugiyamaLayout on: connectedMethods edges: edges.	
 				
 			"Single methods"
 			singleMethods := mths select: [ :m | m connectedEdges isEmpty ].
