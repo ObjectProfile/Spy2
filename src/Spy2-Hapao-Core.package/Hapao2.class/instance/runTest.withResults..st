@@ -1,5 +1,6 @@
 hooks
 runTest: test withResults: results
-	currentTestMethod := test class >> test selector.
+	currentTestMethod := test class lookupSelector: test selector.
+	self assert: currentTestMethod notNil.
 	super runTest: test withResults: results.
 	currentTestMethod := nil
