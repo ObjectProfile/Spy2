@@ -22,7 +22,7 @@ visualizeOn: view
 				
 			"Connected methods"
 			connectedMethods := mths select: [ :m | m connectedEdges notEmpty ].
-			RTSugiyamaLayout on: connectedMethods edges: edges.	
+			RTTreeLayout on: connectedMethods edges: edges.	
 				
 			"Single methods"
 			singleMethods := mths select: [ :m | m connectedEdges isEmpty ].
@@ -37,7 +37,7 @@ visualizeOn: view
 			mths @ RTPopup.
 			
 			RTNest new on: classElement nest: mths.
-			classElement @ RTDraggable @ RTPopup @ (RTLabelled new setAsHighlightable).
+			classElement @ RTDraggable @ RTPopup @ (RTLabeled new setAsHighlightable).
 			classElements add: classElement.
 			interactionBuilder setUpElements: mths ].
 	interactionBuilder setUpElements: classElements.
