@@ -1,3 +1,3 @@
 hooks
 spyClassForMethod
-	 ^ LoopProfilerMethod
+	 ^ CollectionProfilerMethod

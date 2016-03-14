@@ -1,3 +1,3 @@
 hooks
 spyClassForPackage
-	 ^ LoopProfilerPackage
+	 ^ CollectionProfilerPackage

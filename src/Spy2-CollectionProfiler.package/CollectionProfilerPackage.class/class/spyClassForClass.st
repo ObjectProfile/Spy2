@@ -1,3 +1,3 @@
 hooks
 spyClassForClass
-	 ^ LoopProfilerClass
+	 ^ CollectionProfilerClass
