@@ -8,7 +8,7 @@ profilePackageAsk
 
 	| packageName |
 	packageName := UIManager default
-		request: 'Enter a pattern of a pacakge (e.g., Roassal2 or Trachel)'
+		request: 'Enter a pattern of a Package (e.g., Trachel, Roassal2, Roassal2*)'
 		initialAnswer: 'Trachel'
 		title: 'Enter the name of a package to measure the coverage'.
 	packageName ifNil: [ ^ nil ].
