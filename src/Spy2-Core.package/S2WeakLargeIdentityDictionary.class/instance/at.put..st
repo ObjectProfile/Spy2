@@ -1,7 +1,7 @@
 as yet unclassified
 at: key put: value
 	|item prevItem hash|
-	hash := key largeIdentityHash + 1.
+	hash := key largeIdentityHash \\ self capacity + 1.
 	self cleanFirstTableItemsAt: hash.
 	item := (items at: hash).
 	"No elements in the list"
