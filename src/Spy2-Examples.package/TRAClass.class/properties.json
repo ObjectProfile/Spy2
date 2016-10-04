@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Class",
+	"category" : "Spy2-Examples-TraceTeseo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TRAClass",
+	"type" : "normal"
+}

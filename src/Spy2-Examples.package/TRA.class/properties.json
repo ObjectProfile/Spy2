@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "Spy2-Examples-TraceTeseo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream",
+		"revision"
+	],
+	"name" : "TRA",
+	"type" : "normal"
+}

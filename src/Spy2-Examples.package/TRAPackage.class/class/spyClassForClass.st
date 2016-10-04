@@ -1,0 +1,3 @@
+hooks
+spyClassForClass
+	 ^ TRAClass
