@@ -1,3 +1,3 @@
 util
 hasSlots
-	^ Smalltalk version = 'Pharo4.0' or: [ Smalltalk version = 'Pharo5.0' ]
+	^ #('Pharo4.0' 'Pharo5.0' 'Pharo6.0') includes: Smalltalk version
