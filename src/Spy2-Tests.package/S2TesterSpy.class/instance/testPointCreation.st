@@ -5,11 +5,11 @@ testPointCreation
 		1 / 0
 		].
 	profiler profile: [
-		Halt disableHaltOnce.
+		Spy2 disableDebugSpy.
 		self shouldnt: [2 @ 3] raise: Exception.
-		Halt enableHaltOnce.
+		Spy2 enableDebugSpy.
 		self should: [ 1 @ 2] raise: Exception.
 		self shouldnt: [4 @ 3] raise: Exception.
-		self deny: Halt isHaltOnceEnabled.
+		self deny: Spy2 isDebugSpyEnabled.
 		 ] 
 		onPackageNamed: 'Spy2-Scenario'
