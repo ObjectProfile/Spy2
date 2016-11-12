@@ -4,7 +4,9 @@
 	"category" : "Spy2-Core-Metamodel",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"DebugSpyFlag"
+	],
 	"instvars" : [ ],
 	"name" : "Spy2",
 	"type" : "normal"

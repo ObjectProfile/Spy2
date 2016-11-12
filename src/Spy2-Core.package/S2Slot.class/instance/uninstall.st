@@ -1,4 +1,4 @@
 util
-uninstall 
-	(self slotClass layout slotScope indexOf: self) = 0 ifFalse: 
-		 [ self slotClass layout replaceSlot: self with: self originalSlot ]
+uninstall
+	(self slotClass classLayout slotScope indexOf: self) = 0
+		ifFalse: [ self slotClass classLayout replaceSlot: self with: self originalSlot ]

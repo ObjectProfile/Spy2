@@ -1,9 +1,9 @@
 *Spy2-Core
 spyHandleUnwind
 	self on: Exception do: [ :ex |
-		Halt isHaltOnceEnabled 
+		Spy2 isDebugSpyEnabled 
 			ifTrue: [ 
-				Halt disableHaltOnce.
+				Spy2 disableDebugSpy.
 				ex pass ]
 			ifFalse: [ 
 				ex return: nil ] ].
