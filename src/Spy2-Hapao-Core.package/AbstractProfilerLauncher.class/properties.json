@@ -6,7 +6,9 @@
 		"selectors"
 	],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"lastEntries"
+	],
 	"instvars" : [ ],
 	"name" : "AbstractProfilerLauncher",
 	"type" : "normal"

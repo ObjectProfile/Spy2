@@ -1,5 +1,5 @@
 public
-profilePackageNamed: packageNamesArrayOfRegExp
+profilePackagesMatching: packageNamesArrayOfRegExp
 	| classes |
 	classes := self classesOfPackagesMatching: packageNamesArrayOfRegExp.
 	classes size = 0

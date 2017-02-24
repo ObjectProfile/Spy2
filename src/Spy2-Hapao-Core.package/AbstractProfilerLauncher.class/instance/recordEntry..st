@@ -1,0 +1,3 @@
+utility
+recordEntry: packageNamesArrayOfRegExp
+	self lastEntries add: packageNamesArrayOfRegExp

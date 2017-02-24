@@ -6,11 +6,13 @@ profilePackageAsk
 	self new profilePackageAsk
 	"
 
-	| packageName |
-	packageName := UIManager default
-		request: 'Enter a pattern of a Package (e.g., Trachel, Roassal2, Roassal2*)'
-		initialAnswer: 'Trachel'
+	| packageNamesArrayOfRegExp |
+	packageNamesArrayOfRegExp := UIManager default
+		request:
+			'Enter a pattern of a Package (e.g., ''Trachel'', ''Trach* Roassal*'')'
+		initialAnswer: 'Trachel Roassal2*'
 		title: 'Enter the name of a package to measure the coverage'.
-	packageName ifNil: [ ^ nil ].
-	packageName := packageName trimBoth.
-	self profilePackageNamed: packageName
+	packageNamesArrayOfRegExp ifNil: [ ^ nil ].
+	packageNamesArrayOfRegExp := packageNamesArrayOfRegExp trimBoth.
+	self profilePackagesMatching: packageNamesArrayOfRegExp.
+	self recordEntry: packageNamesArrayOfRegExp
