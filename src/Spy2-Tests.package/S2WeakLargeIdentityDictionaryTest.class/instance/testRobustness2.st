@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testRobustness2
 	|col col2 col3 searchTest |
 	col := self createStubCollection.
@@ -10,8 +10,6 @@ testRobustness2
 	col3 doWithIndex: [ :o :i | dict at: o put: i + 20000 ].
 	Smalltalk garbageCollect; garbageCollect.
 	searchTest := [ :offset | [ :o :i | 
-		o 
-			ifNil: [ self deny: (dict includesKey: o) ]
-			ifNotNil: [ self assert: (dict at: o) equals: i + offset ] ] ].
+		self assert: (dict at: o) equals: i + offset ] ].
 	col2 doWithIndex: (searchTest value: 10000).
 	col3 doWithIndex: (searchTest value: 20000)
