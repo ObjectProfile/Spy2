@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Core-Utils",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dict",
+		"mutex"
+	],
+	"name" : "S2ThreadsafeDictionary",
+	"type" : "normal"
+}
