@@ -7,7 +7,8 @@
 	],
 	"pools" : [ ],
 	"classvars" : [
-		"lastEntries"
+		"lastEntries",
+		"lastProfiledClasses"
 	],
 	"instvars" : [ ],
 	"name" : "AbstractProfilerLauncher",
