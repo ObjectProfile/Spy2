@@ -15,7 +15,8 @@ visualizeAsListOn: view
 		lblShape add: (RTBox new color: Color transparent; width: 400).
 		lblShape alignRight.
 		
-		lbl := lblShape elementOn: cls name.
+		lbl := lblShape elementOn: cls printString.
+
 		
 		bar := shape elementOn: cls.
 		per := RTLabel elementOn: cls coverage asString, '%'.
