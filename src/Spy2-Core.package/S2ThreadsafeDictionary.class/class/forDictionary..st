@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 forDictionary: aDictionary
 	^ self new
 		dict: aDictionary;
