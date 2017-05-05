@@ -4,4 +4,4 @@ colorForTestResult
 	self didIPass ifTrue: [ ^ Color lightGreen ].
 	self didIFail ifTrue: [ ^ Color lightYellow ].
 	self didIError ifTrue: [ ^ Color lightRed ].
-	^ Color white
+	^ Color transparent
