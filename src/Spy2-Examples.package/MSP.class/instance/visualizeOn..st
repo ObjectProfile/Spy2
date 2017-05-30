@@ -73,7 +73,7 @@ visualizeOn: view
 				 ]
 		ifFalse: [ 
 			doubleBar interaction 
-				highlightNeighbour: [ :cls | methodsToRender select: [ :m | m doIInstantiate: cls ] ].
+				highlightNeighbors: [ :cls | methodsToRender select: [ :m | m doIInstantiate: cls ] ].
 			doubleBar shape label text: #name ].
 
 	doubleBar points: ((self profiler counting associations reverseSortedAs: #value) collect: #key).
