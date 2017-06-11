@@ -5,5 +5,5 @@ getClassShapeBuilder
 	classShapeBuilder rectangle
 		borderColor: Color black;
 		if: #isTestClass borderColor: Color green;
-		fillColor: Color transparent.
+		fillColor: Color white.
 	^ classShapeBuilder
