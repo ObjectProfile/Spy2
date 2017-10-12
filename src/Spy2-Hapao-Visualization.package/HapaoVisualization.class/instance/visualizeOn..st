@@ -5,7 +5,7 @@ visualizeOn: view
 	| classShapeBuilder methodShapeBuilder interactionBuilder classElements connectedMethods singleMethods edges   classElementsUT connectedClassesUT singleClassesUT classElementsNotUT connectedClassesNotUT singleClassesNotUT |
 	
 	self initializeView: view.
-	
+	view canvas color: Color white.
 	self setMaxValues.
 	interactionBuilder := self getInteractionBuilder.
 	classShapeBuilder := self getClassShapeBuilder.
