@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Method",
+	"category" : "Spy2-Examples-TypeAndNeuralNetwork",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"types",
+		"numberOfExecutions"
+	],
+	"name" : "TypeAndNNMethod",
+	"type" : "normal"
+}
