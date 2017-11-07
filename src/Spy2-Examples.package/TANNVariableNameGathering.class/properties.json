@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "TRBProgramNodeVisitor classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"selectorToFind",
+		"result"
+	],
+	"name" : "TANNVariableNameGathering",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "TRBProgramNodeVisitor",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Spy2-Examples-TypeAndNeuralNetwork"
+}
