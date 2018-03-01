@@ -1,6 +1,6 @@
 accessing
 signature
-	| s |
+	| s at ats |
 	self hasBeenExecuted
 		ifFalse: [ s := WriteStream on: String new.
 			s nextPutAll: '{ '.
@@ -8,4 +8,6 @@ signature
 			s nextPutAll: '} -> Object'.
 			^ s contents ].
 	
-	^ self argumentTypes asString , ' -> ' , self returnType asString
+	at := self argumentTypes.
+	ats := at size > 0 ifTrue: [ at asString ] ifFalse: [ '{}' ].
+	^ ats, ' -> ' , self returnType asString

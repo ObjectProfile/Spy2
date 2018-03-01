@@ -9,7 +9,7 @@ testBasic
 	self assert: (run >> #S2pyB) class equals: TypeClass.
 	
 	self assert: (run >> #S2pyB >> #bar) hasBeenExecuted.
-	self assert: (run >> #S2pyB >> #bar) signature equals: '#() -> ByteString'.	
+	self assert: (run >> #S2pyB >> #bar) signature equals: '{} -> ByteString'.	
 	self assert: (run >> #S2pyB >> #bar) returnType equals: ByteString.
 	"---"
 	
