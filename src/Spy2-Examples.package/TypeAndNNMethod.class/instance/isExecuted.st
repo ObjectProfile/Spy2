@@ -1,3 +1,0 @@
-testing
-isExecuted
-	^ types notEmpty

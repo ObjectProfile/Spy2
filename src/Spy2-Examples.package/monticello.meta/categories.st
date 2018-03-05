@@ -19,6 +19,5 @@ SystemOrganization addCategory: 'Spy2-Examples-TestSurgeon'!
 SystemOrganization addCategory: 'Spy2-Examples-TraceTeseo'!
 SystemOrganization addCategory: 'Spy2-Examples-Tracer'!
 SystemOrganization addCategory: 'Spy2-Examples-Type'!
-SystemOrganization addCategory: 'Spy2-Examples-TypeAndNeuralNetwork'!
 SystemOrganization addCategory: 'Spy2-Examples-UndertestedMethods'!
 SystemOrganization addCategory: 'Spy2-Examples-Visibility'!
