@@ -8,6 +8,7 @@ animatedVisualization
 		blockToExecute: [ view removeAllElements.
 			view removeAllEdges.
 			self visualizeOn: view.
+			view canvas camera focusOnCenterScaled.
 			self resetCount ].
 	anim inView: view.
 	^ view
