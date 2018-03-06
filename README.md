@@ -1,5 +1,5 @@
 # Spy2
-Profiling framework for Pharo. Also contains the Hapao test coverage tool.
+Spy2 is a profiling framework for Pharo. Spy2 source code is kept on Monticello. You can install it using the following incantation.
 
 ```Smalltalk
 Gofer it
@@ -7,6 +7,8 @@ Gofer it
     configurationOf: 'Spy2';
     loadStable.
 ```  
+
+Spy2 is also available on the Pharo Catalog Browser.
 
 # Hapao 
 Hapao is a test coverage tool for Pharo and VisualWorks. After having run your test, it gives an intuitive visualization of the test coverage.
