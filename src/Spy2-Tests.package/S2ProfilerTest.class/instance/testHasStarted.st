@@ -4,7 +4,7 @@ testHasStarted
 	| profiler |
 	profiler := S2Profiler new.
 	self deny: profiler hasStarted.
-	profiler startOnMethods: {S2pyA >> #foo}.
+	profiler startOnMethods: (Array with: S2pyA >> #foo ).
 	self assert: profiler hasStarted.
 	Processor yield.
 	self assert: profiler hasStarted.
