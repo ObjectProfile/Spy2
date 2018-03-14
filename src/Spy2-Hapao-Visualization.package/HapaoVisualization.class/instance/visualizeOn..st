@@ -34,7 +34,7 @@ visualizeOn: view
 			
 			"No need of method code popup."
 			"mths @ (self hapaoPopupUsing: methodShapeBuilder)."
-			mths @ RTPopup.
+			mths @ RTDraggable @RTPopup.
 			
 			RTNest new on: classElement nest: mths.
 			classElement @ RTDraggable @ RTPopup @ (RTLabeled new setAsHighlightable).
@@ -72,13 +72,7 @@ visualizeOn: view
 	
 	"Layout the whole thing!"
 	RTHorizontalLineLayout on: { connectedClassesUT . singleClassesUT . connectedClassesNotUT . singleClassesNotUT }.
-"	TRConstraint move: singleClassesUT onTheRightOf: connectedClassesUT.
-	TRConstraint move: connectedClassesNotUT onTheRightOf: singleClassesUT.
-	TRConstraint move: singleClassesNotUT onTheRightOf: connectedClassesNotUT.
-"	
-"	
-	RTTreeLayout on: classElements.
-"
+
 
 	self visualizeLegendOn: view.
 	"view @ RTDoubleScrollBar."

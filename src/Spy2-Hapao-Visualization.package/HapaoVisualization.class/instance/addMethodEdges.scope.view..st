@@ -2,7 +2,8 @@ visualization
 addMethodEdges: each scope: mths view: view
 	| edges sb |
 	sb := RTEdgeBuilder new
-			view: view.
+			view: view;
+			moveBehind.
 	sb shape shape: (RTLine new attachPoint: RTVerticalAttachPoint instance).
 
 	sb objects: each allMethods.
