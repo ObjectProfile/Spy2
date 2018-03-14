@@ -6,4 +6,5 @@ profileClass: classToMeasureCoverage
 	referencingUnitTest := classToMeasureCoverage unitTestsReferencingMe.
 	referencingUnitTest 
 		ifEmpty: [ self inform: 'No unit test reference ', classToMeasureCoverage name. ^ self ].
-	(Hapao2 runTestsForClasses: referencingUnitTest , { classToMeasureCoverage }) inspect
+	lastProfiledClasses := referencingUnitTest, { classToMeasureCoverage }.
+	(Hapao2 runTestsForClasses: lastProfiledClasses) inspect
