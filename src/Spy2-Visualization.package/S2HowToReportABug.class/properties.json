@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2AbstractWorldMenu",
+	"category" : "Spy2-Visualization-WorldMenu",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "S2HowToReportABug",
+	"type" : "normal"
+}
