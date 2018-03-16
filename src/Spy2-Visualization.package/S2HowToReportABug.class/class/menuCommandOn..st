@@ -6,4 +6,4 @@ menuCommandOn: aBuilder
 			parent: self projectName asSymbol;
 			label: 'How To report a bug';
 			icon: (Smalltalk ui icons iconNamed: #smallDebug);
-			action: [ self new open.  WebBrowser openOn: 'https://github.com/moosetechnology/Moose/issues'  ]
+			action: [ self new open.  ]
