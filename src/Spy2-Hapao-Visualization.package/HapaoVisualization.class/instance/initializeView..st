@@ -1,13 +1,6 @@
 visualization
 initializeView: builder
-	builder view @ RTFindInAView.
-	"self findButton: builder view."
-"	profiler zoomInButton: builder view.
-	profiler zoomOutButton: builder view.
-	profiler exportSVGButton: builder view.
-	profiler exportHTMLButton: builder view.
-"
-
+	builder view @ RTFindInAView @ RTZoomableView.
 	profiler refreshViewButtonOn: builder view.
 	builder canvas addMenu: 'get list' callback: [ self visualizeAsList ].
 	builder canvas addMenu: 'Matrix' callback: [ self visualizeAsMatrix ].
