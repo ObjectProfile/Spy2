@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "TypeProfiler",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TypeProfiler",
+	"type" : "normal"
+}

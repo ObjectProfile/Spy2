@@ -1,0 +1,3 @@
+hooks
+spyClassForMethod
+	 ^ TypeProfilerMethod

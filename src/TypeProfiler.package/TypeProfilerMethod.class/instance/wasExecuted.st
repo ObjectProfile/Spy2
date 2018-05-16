@@ -1,0 +1,3 @@
+hooks
+wasExecuted
+	^ types isNotNil
