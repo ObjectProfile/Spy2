@@ -1,3 +1,3 @@
 accessing - read only
 allMethods
-	^ super allMethods select:#wasExecuted.
+	^ super allMethods select: #wasExecuted
