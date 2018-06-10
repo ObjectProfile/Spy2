@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"allObjects",
+		"counting"
+	],
 	"name" : "S2C",
 	"type" : "normal"
 }

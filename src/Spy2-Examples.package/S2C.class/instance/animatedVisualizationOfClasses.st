@@ -1,6 +1,6 @@
-visualization
-animatedVisualization
-	"Show animation with methods"
+as yet unclassified
+animatedVisualizationOfClasses
+	"Show animation of classes"
 	| view anim |
 	view := RTView new.
 	anim := RTActiveAnimation new.
@@ -8,7 +8,7 @@ animatedVisualization
 	anim
 		blockToExecute: [ view removeAllElements.
 			view removeAllEdges.
-			self visualizeOn: view.
+			self visualizeOfClassesOn: view.
 			view canvas camera focusOnCenterScaled.
 			self resetCount ].
 	anim inView: view.
