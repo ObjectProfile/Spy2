@@ -1,4 +1,4 @@
-as yet unclassified
+visualization
 animatedVisualizationOfClasses
 	"Show animation of classes"
 	| view anim |

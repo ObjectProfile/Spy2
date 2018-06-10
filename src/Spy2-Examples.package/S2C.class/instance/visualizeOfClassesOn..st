@@ -1,4 +1,4 @@
-as yet unclassified
+visualization
 visualizeOfClassesOn: view
 	"This is a generated visualization"
 
