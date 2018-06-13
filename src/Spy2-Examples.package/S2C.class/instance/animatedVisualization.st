@@ -1,6 +1,5 @@
 visualization
 animatedVisualization
-	"Show animation with methods"
 	| view anim |
 	view := RTView new.
 	anim := RTActiveAnimation new.

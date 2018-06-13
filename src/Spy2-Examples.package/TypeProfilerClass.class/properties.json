@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "S2Profiler",
-	"category" : "Spy2-Examples-Counting",
+	"super" : "S2Class",
+	"category" : "Spy2-Examples-TypeProfiler",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "S2C",
+	"name" : "TypeProfilerClass",
 	"type" : "normal"
 }
