@@ -6,5 +6,5 @@ profileClasses: classToMeasureCoverage
 	lastProfiledClasses := classToMeasureCoverage.
 	referencingUnitTest := classToMeasureCoverage select: [ :c | c inheritsFrom: TestCase ].
 	referencingUnitTest 
-		ifEmpty: [ self inform: 'No unit test reference ', classToMeasureCoverage name. ^ self ].
+		ifEmpty: [ self inform: 'No unit test reference ', classToMeasureCoverage asString. ^ self ].
 	(Hapao2 runTestsForClasses: classToMeasureCoverage) inspect
