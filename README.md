@@ -10,6 +10,15 @@ Metacello new
 
 Spy2 is also available on the Pharo Catalog Browser.
 
+If you have a local copy of Spy, then you can load it via:
+```Smalltalk
+Metacello new 
+  baseline: 'Spy2'; 
+  repository: 'gitlocal:///Users/alexandrebergel/Dropbox/GitRepos/Spy2' ;
+  lock;
+  load
+``` 
+
 # Hapao 
 Hapao is a test coverage tool for Pharo and VisualWorks. After having run your test, it gives an intuitive visualization of the test coverage.
 More information can be found on *http://bergel.eu/download/papers/Berg12c-HapaoSCP.pdf*
