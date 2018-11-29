@@ -7,4 +7,4 @@ r1_4: spec
 	spec for: #'pharo4.x' version: '1.1.13'.
 	spec for: #'pharo5.x' version: '1.1.13'.
 	spec for: #'pharo6.x' version: '1.1.19'.
-	spec for: #'pharo7.x' version: '1.1.19'.
+	spec for: #'pharo7.x' version: '1.1.21'.
