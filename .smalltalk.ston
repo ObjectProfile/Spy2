@@ -1,11 +1,9 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #configuration : 'Spy2',
-      #repository : 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo60/main/',
-      #load : [ 'All' ],
-      #platforms : [ #pharo ],
-      #version: '0.3-baseline'
+      #baseline : 'Spy2',
+      #directory : 'src',
+      #platforms : [ #pharo ]
     }
   ],
 
