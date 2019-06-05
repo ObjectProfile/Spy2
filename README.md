@@ -26,3 +26,7 @@ More information can be found on *http://bergel.eu/download/papers/Berg12c-Hapao
 
 # Contributing to Spy and Hapao
 If you wish to contribute to Spy2 or Hapao (e.g., fixing bug, proposing an improvement), please, submit pull requests.
+
+# Pharo 6 and 7
+
+The git repository contains a tag `Pharo7`.
