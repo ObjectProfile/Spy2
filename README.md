@@ -19,6 +19,15 @@ Metacello new
   load
 ``` 
 
+Use the stable version of Spy2 for pharo7
+
+```Smalltalk
+Metacello new 
+  baseline: 'Spy2'; 
+  repository: 'github://ObjectProfile/Geometry:v1.1.0/src'; 
+  load
+```
+
 # Hapao 
 Hapao is a test coverage tool for Pharo and VisualWorks. After having run your test, it gives an intuitive visualization of the test coverage.
 More information can be found on *http://bergel.eu/download/papers/Berg12c-HapaoSCP.pdf*
