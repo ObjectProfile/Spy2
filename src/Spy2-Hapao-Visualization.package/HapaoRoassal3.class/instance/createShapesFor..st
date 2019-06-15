@@ -1,5 +1,5 @@
 layout
-applyLayout: classes
+createShapesFor: classes
 	| view elements connectedClasses layout singleClasses |
 	elements := shape elementsOn: classes.
 	view := RSView new.
@@ -19,13 +19,10 @@ applyLayout: classes
 		horizontalGap: 10;
 		on: connectedClasses.
 	
-	elements removeAll.
-	(layout rootNodesFor: connectedClasses) do: [ :e | | group |
+	elements := (layout rootNodesFor: connectedClasses) collect: [ :e | 
+		| group |
 		group :=  TSGroup new.
-		elements add: group.
-		self fill: group with: e. ]. 
+		self fill: group with: e.
+		group ]. 
 	elements addAll: singleClasses.
-	RSRectanglePackLayout new 
-		gap: 0.5;
-		on: elements.
-	^ view shapes
+	^ view shapes->elements

@@ -1,11 +1,9 @@
 public
 elementsToShow: key
 	| shapes |
+	current := self perform: key asLowercase asSymbol.
+	shapes := current key.
 	
-	shapes := (key = 'Classes'
-		ifTrue: [ classesShape ]
-		ifFalse: [ testsShape ]).
 	mainView canvas shapes: shapes. 
 	lightInteraction shapes: mainView shapes.
-	mainView zoomToFit.
-	mainView signalUpdate.
+	self relayout
