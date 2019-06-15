@@ -1,6 +1,6 @@
 *Spy2-Hapao-Visualization
 gtInspectorViewCoverageIn: composite
-	<gtInspectorPresentationOrder: 20>
+	"<gtInspectorPresentationOrder: 20>
 	| classToMeasureCoverage referencingUnitTest |
 	composite roassal2
 		title: 'Coverage';
@@ -12,4 +12,4 @@ gtInspectorViewCoverageIn: composite
 			referencingUnitTest ifNotEmpty: 
 				[(Hapao2 runTestsForClasses: referencingUnitTest , { classToMeasureCoverage })
 					visualizeOn: view.
-					view @ RTDoubleScrollBar ] ]
+					view @ RTDoubleScrollBar ] ]"

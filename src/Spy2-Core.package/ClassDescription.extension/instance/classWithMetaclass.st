@@ -1,3 +1,4 @@
 *Spy2-Core
 classWithMetaclass
-	^ { self baseClass . self classClass }
+	^ {self instanceSide.
+	self classClass}

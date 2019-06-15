@@ -1,0 +1,1 @@
+I can create a simple visualization with the hapao objects

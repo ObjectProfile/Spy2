@@ -4,8 +4,10 @@ menuCommandOn1: aBuilder
 	"Do nothing if not overriden"
 	self applicationName ifNil: [ ^ self ].
 	
-	((aBuilder item: self applicationName) icon: self icon)
-	withSeparatorAfter;
+	((aBuilder item: self applicationName)
+		parent: #Tools;
+		icon: self icon)
+		withSeparatorAfter;
 	with: [
 	(aBuilder item: self applicationName, '1')
 		order: 0.1; 

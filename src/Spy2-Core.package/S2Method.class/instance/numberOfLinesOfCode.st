@@ -1,3 +1,3 @@
 accessing - computed
 numberOfLinesOfCode
-	^ originalMethod numberOfLinesOfCode
+	^ originalMethod linesOfCode

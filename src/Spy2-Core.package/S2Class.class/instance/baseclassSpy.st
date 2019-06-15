@@ -1,3 +1,3 @@
 accessing - computed
 baseclassSpy
-	^ self theClass baseClass getSpy: self profiler
+	^ self theClass instanceSide getSpy: self profiler

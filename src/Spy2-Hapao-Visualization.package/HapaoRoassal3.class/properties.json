@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "akevalion 5/10/2019 12:39",
+	"super" : "Object",
+	"category" : "Spy2-Hapao-Visualization",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"profiler",
+		"shape",
+		"methodShape",
+		"colorScale",
+		"lightInteraction",
+		"mainView",
+		"classesShape",
+		"testsShape",
+		"edgeBuilder"
+	],
+	"name" : "HapaoRoassal3",
+	"type" : "normal"
+}

@@ -3,14 +3,12 @@ testContract
 
 	| c rule |
 	c := CCContract new.
-	c addRule: (CCGrowRule new on: RTView>>#add: forValue: [ :aView | aView elements ]).
-	c addRule: (CCGrowRule new on: RTView>>#addAll: forValue: [ :aView | aView elements ]).
-	c addRule: (CCGrowRule new on: RTView>>#addMenu:callback: 
-									forValue: [ :aView | aView canvas shapes ]).
+	c addRule: (CCGrowRule new on: RSView>>#add: forValue: [ :aView | aView elements ]).
+	c addRule: (CCGrowRule new on: RSView>>#addAll: forValue: [ :aView | aView elements ]).
 
-	self assert: (c isCheckableMethod: RTView>>#add:).
-	self assert: (c isCheckableMethod: RTView>>#addAll:).
-	self deny: (c isCheckableMethod: RTView>>#build).
+	self assert: (c isCheckableMethod: RSView>>#add:).
+	self assert: (c isCheckableMethod: RSView>>#addAll:).
+
 	
-	rule := c ruleFor: RTView>>#add:.
-	self assert: (rule valueForReceiver: RTView new) size equals: 0.
+	rule := c ruleFor: RSView>>#add:.
+	self assert: (rule valueForReceiver: RSView new) size equals: 0.
