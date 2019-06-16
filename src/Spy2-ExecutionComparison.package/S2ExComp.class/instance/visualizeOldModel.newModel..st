@@ -54,5 +54,15 @@ visualizeOldModel: beforeModel newModel: afterModel
 	hOutgoing highlightShape color: Color red trans.
 	v elements @ hOutgoing.
 	v @ RSControlsView.
+
+	"ins := RSInspectable new.
+	ins inspectElementBlock: [ :m |
+		| tv |
+		tv := RSView new.
+		tv add: (RSShapeBuilder label elementOn: m sourceCode).
+		tv open
+	].
+	v elements @ ins."
+	v elements @ (RSMenuActivable new menuDo: [ :menu :element | menu add: 'Inspect' target: element model selector: #inspect ]).
 	v open.
 	self halt.
