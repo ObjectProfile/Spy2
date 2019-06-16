@@ -1,7 +1,7 @@
 visualization
 visualizeOldModel: beforeModel newModel: afterModel
 
-	| executedMethodsBefore executedMethodsAfter commonMethods onlyBeforeMethods onlyAfterMethods |
+	| executedMethodsBefore executedMethodsAfter commonMethods onlyBeforeMethods onlyAfterMethods v onlyMBElements onlyMAElements comonMElements hOutgoing |
 	executedMethodsBefore := beforeModel allExecutedMethods.
 	executedMethodsAfter := afterModel allExecutedMethods.
 	commonMethods := OrderedCollection new.
@@ -15,6 +15,49 @@ visualizeOldModel: beforeModel newModel: afterModel
 	].
 
 	onlyBeforeMethods := executedMethodsBefore select: [ :mmb | commonMethods noneSatisfy: [ :m | m beforeMethod == mmb ] ].
-	onlyAfterMethods := executedMethodsBefore select: [ :mma | commonMethods noneSatisfy: [ :m | m afterMethod == mma ] ].
+	onlyAfterMethods := executedMethodsAfter select: [ :mma | commonMethods noneSatisfy: [ :m | m afterMethod == mma ] ].
 
+
+	v := RSView new.
+	onlyMBElements := RSShapeBuilder circle color: Color blue trans; elementsOn: onlyBeforeMethods.
+	onlyMAElements := RSShapeBuilder circle color: Color yellow trans; elementsOn: onlyAfterMethods.
+	comonMElements := RSShapeBuilder circle color: Color green trans; elementsOn: commonMethods.
+	v addAll: onlyMBElements; addAll: onlyMAElements; addAll: comonMElements.
+	v elements @ RSPopup.
+	RSEdgeBuilder line
+		view: v;
+		color: Color blue trans;
+		moveBehind;
+		withBorderAttachPoint;
+		fromElements: comonMElements;
+		connectToAll: [ :m | m beforeMethod incomingCalls, m beforeMethod outgoingCalls ].
+
+	RSEdgeBuilder line
+		view: v;
+		color: Color yellow trans;
+		moveBehind;
+		withBorderAttachPoint;
+		fromElements: comonMElements;
+		connectToAll: [ :m | m afterMethod incomingCalls, m afterMethod outgoingCalls ].
+
+	RSEdgeBuilder line
+		view: v;
+		color: Color gray trans;
+		moveBehind;
+		withBorderAttachPoint;
+		elements: comonMElements;
+		connectToAll: [ :m | m connectedToAllIn: commonMethods ].
+"		connectToAll: [ :m | 
+			commonMethods select: [ :cm |
+				(m afterMethod incomingCalls, m afterMethod outgoingCalls) 
+					anySatisfy: [ :tm | tm == m afterMethod or: [ tm == m beforeMethod ] ] ] ].
+
+"
+	RSForceBasedLayout on: v elements.
+	
+	hOutgoing := RSHighlightable new withOutgoingEdges.
+	hOutgoing highlightShape color: Color red trans.
+	v elements @ hOutgoing.
+	v @ RSControlsView.
+	v open.
 	self halt.
