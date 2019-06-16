@@ -14,7 +14,8 @@
 		"mainView",
 		"classesShape",
 		"testsShape",
-		"edgeBuilder"
+		"edgeBuilder",
+		"current"
 	],
 	"name" : "HapaoRoassal3",
 	"type" : "normal"
