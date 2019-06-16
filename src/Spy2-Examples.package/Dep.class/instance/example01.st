@@ -1,3 +1,3 @@
 examples
 example01
-	Dep profile: [ RTRoassalExample new exampleLabelledEncapsulating ] onPackageNamed: 'Roassal2'
+	Dep profile: [ RSShapeExamples new example13Arrow ] onPackageNamed: 'Roassal3'
