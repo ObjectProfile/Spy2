@@ -47,13 +47,8 @@ visualizeOldModel: beforeModel newModel: afterModel
 		withBorderAttachPoint;
 		elements: comonMElements;
 		connectToAll: [ :m | m connectedToAllIn: commonMethods ].
-"		connectToAll: [ :m | 
-			commonMethods select: [ :cm |
-				(m afterMethod incomingCalls, m afterMethod outgoingCalls) 
-					anySatisfy: [ :tm | tm == m afterMethod or: [ tm == m beforeMethod ] ] ] ].
 
-"
-	RSForceBasedLayout on: v elements.
+	RSTreeLayout on: v elements.
 	
 	hOutgoing := RSHighlightable new withOutgoingEdges.
 	hOutgoing highlightShape color: Color red trans.
