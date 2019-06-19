@@ -19,11 +19,14 @@ visualizeOldModel: beforeModel newModel: afterModel
 
 
 	v := RSView new.
-	onlyMBElements := RSShapeBuilder circle color: Color blue trans; elementsOn: onlyBeforeMethods.
-	onlyMAElements := RSShapeBuilder circle color: Color yellow trans; elementsOn: onlyAfterMethods.
-	comonMElements := RSShapeBuilder circle color: Color green trans; elementsOn: commonMethods.
+	onlyMBElements := RSShapeBuilder circle size: [ :m | m numberOfExecutions + 5 ]; color: Color blue trans; elementsOn: onlyBeforeMethods.
+	onlyMAElements := RSShapeBuilder circle size: [ :m | m numberOfExecutions + 5 ]; color: Color yellow trans; elementsOn: onlyAfterMethods.
+	comonMElements := RSShapeBuilder box 
+								width: [ :m | m beforeMethod numberOfExecutions + 5 ];
+								height: [ :m | m afterMethod numberOfExecutions + 5 ];
+								color: Color green trans; elementsOn: commonMethods.
 	v addAll: onlyMBElements; addAll: onlyMAElements; addAll: comonMElements.
-	v elements @ RSPopup.
+	v elements @ RSPopup @ RSDraggable.
 	RSEdgeBuilder line
 		view: v;
 		color: Color blue trans;
