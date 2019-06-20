@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-ExecutionComparison",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"onlyBeforeMethods",
+		"onlyAfterMethods",
+		"commonMethods"
+	],
+	"name" : "S2ExCompVisualization",
+	"type" : "normal"
+}
