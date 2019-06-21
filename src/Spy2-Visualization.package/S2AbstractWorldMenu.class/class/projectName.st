@@ -1,3 +1,0 @@
-world menu
-projectName
-	^ 'Spy'
