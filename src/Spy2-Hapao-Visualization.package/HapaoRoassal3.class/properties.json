@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "akevalion 5/10/2019 12:39",
 	"super" : "Object",
-	"category" : "Spy2-Hapao-Visualization",
+	"category" : "Spy2-Hapao-Visualization-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

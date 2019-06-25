@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "S2Profiler",
+	"category" : "Spy2-Hapao-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"currentTestMethod"
+	],
+	"name" : "Hapao2",
+	"type" : "normal"
+}

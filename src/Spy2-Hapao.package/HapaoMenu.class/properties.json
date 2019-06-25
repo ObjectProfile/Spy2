@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "akevalion 6/21/2019 15:22",
+	"super" : "Object",
+	"category" : "Spy2-Hapao-WorldMenu",
+	"classinstvars" : [
+		"icon"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "HapaoMenu",
+	"type" : "normal"
+}

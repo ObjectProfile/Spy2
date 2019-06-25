@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "TRBProgramNodeVisitor classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"lastVariableIsSelf",
+		"selectors"
+	],
+	"name" : "SelfCallRBVisitor",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "TRBProgramNodeVisitor",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Spy2-Hapao-Core"
+}

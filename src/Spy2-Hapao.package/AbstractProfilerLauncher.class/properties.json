@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spy2-Hapao-Core",
+	"classinstvars" : [
+		"selectors"
+	],
+	"pools" : [ ],
+	"classvars" : [
+		"lastEntries",
+		"lastProfiledClasses",
+		"userInput"
+	],
+	"instvars" : [ ],
+	"name" : "AbstractProfilerLauncher",
+	"type" : "normal"
+}
