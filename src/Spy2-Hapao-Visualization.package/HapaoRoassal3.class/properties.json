@@ -15,7 +15,8 @@
 		"classesShape",
 		"testsShape",
 		"edgeBuilder",
-		"current"
+		"current",
+		"mainBorder"
 	],
 	"name" : "HapaoRoassal3",
 	"type" : "normal"

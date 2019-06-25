@@ -1,8 +1,6 @@
-initialization
+accessing
 edgeBuilder
-	| border |
 	edgeBuilder ifNotNil: [ ^ edgeBuilder ].
-	border := TSBorder new.
 	^ edgeBuilder := RSEdgeBuilder polyline
 		onElement;
 		controlPoints: [ :ed | [ :from :to | | mid m1 m2 m3 m4 vd d | 
@@ -28,9 +26,9 @@ edgeBuilder
 			].
 			 ] ];
 		onModel;
-		border: border;
+		border: self mainBorder;
 		withVerticalAttachPoint;
 		markerStart: ((RSShapeBuilder triangle size: 10; 
-			color: Color white;
-			border: border;
+			color: Smalltalk ui theme backgroundColor;
+			border: self mainBorder;
 			element) trachelShape asMarker offset: 5)

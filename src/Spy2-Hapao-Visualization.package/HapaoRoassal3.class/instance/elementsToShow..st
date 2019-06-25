@@ -6,4 +6,5 @@ elementsToShow: key
 	
 	mainView canvas shapes: shapes. 
 	lightInteraction shapes: mainView shapes.
-	self relayout
+	mainView zoomToFit.
+	

@@ -1,3 +1,0 @@
-visualization
-hapaoRunAgain
-	HapaoLauncher new profileLastClasses

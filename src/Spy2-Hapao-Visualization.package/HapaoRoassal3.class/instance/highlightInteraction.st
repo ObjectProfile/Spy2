@@ -10,14 +10,10 @@ highlightInteraction
 		| e array anime |
 		e := evt element.
 		array := #(4).
-		e incomingEdges do: [ :ed| ed border 
+		e connectedEdges do: [ :ed| ed border 
 			color: Color blue; 
 			width: 2;
 			dashArray: array. ].
-		e outgoingEdges do: [ :ed | ed border 
-			color: Color blue darker;
-			width: 2;
-			dashArray: array ].
 		anime := mainView animation 
 			repeat;
 			from: 0;

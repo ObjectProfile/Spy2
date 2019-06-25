@@ -22,7 +22,7 @@ visualizeLegend
 	b text: 'height = number of lines of code of '.
 	b text: 'width = number of methods that call it'.
 	b text: 'edge = static call between methods. Above calls below'.
-	b text: 'Method well tested' withBoxColor: Color black .
+	b text: 'Method well tested' withBoxColor: Smalltalk ui theme textColor.
 	b text: 'Method tested' withBoxColor: Color gray .
 	b text: 'Method not tested' withBoxColor: Color red.
 	line := RSSingleEdgeBuilder line 

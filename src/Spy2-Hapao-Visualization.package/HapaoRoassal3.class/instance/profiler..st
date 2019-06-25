@@ -1,6 +1,8 @@
 accessing
 profiler: aProfiler
+	| theme |
 	profiler := aProfiler.
+	theme := Smalltalk ui theme.
 	profiler allMethods
 		do: [ :m | 
 			Hapao2Method maxCallers: (Hapao2Method maxCallers max: m callers size).
@@ -8,4 +10,4 @@ profiler: aProfiler
 			m compiledMethod ifNotNil: [ Hapao2Method maxLines: (Hapao2Method maxLines max: m compiledMethod linesOfCode) ] ].
 	colorScale := TSScale linear 
 		domain: { 0. (Hapao2Method maxCalls max: 1). };
-		range: {Color white. Color black}.
+		range: {theme backgroundColor. theme textColor}.

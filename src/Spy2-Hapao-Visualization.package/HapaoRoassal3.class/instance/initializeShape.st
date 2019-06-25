@@ -9,6 +9,7 @@ initializeShape
 		methods do: [ :m | m view: mainView ].
 		edges := TSGroup new.
 		RSEdgeBuilder line
+			border: self mainBorder;
 			withVerticalAttachPoint;
 			view: edges;
 			elements: methods;
@@ -22,7 +23,7 @@ initializeShape
 		RSHorizontalLineLayout on: { connectedMethods. singleMethods }.
 		edges, methods ];
 		padding: 10;
-		border: TSBorder new;
+		border: self mainBorder;
 		popup; 
 		draggable;
 		addInteraction: labeled.

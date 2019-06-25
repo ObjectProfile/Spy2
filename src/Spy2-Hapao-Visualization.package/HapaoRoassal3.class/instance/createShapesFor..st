@@ -10,6 +10,7 @@ createShapesFor: classes
 		connectFrom: [ :e | classes 
 			detect: [ :cls | cls theClass = e theClass superclass] 
 			ifNone: [ nil ] ].
+	view addAll: elements.
 	view shapes do:[:s | s parent: mainView canvas].
 	
 	connectedClasses := elements select: #hasEdges.
