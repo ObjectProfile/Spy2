@@ -14,8 +14,8 @@ baseline: spec
 				package: 'GT-Spy2-Inspector' with: [ spec requires: 'Spy2-Core' ];
 				package: 'Spy2-Examples' with: [ spec requires: 'Spy2-Core' ];
 				package: 'Spy2-Hapao' with: [ spec requires: 'Spy2-Core' ];
-				package: 'Spy2-Hapao-Visualization' with: [ spec requires: 'Spy2-Hapao-Core' ];
-				package: 'Spy2-Hapao-EmmaReport' with: [ spec requires: 'Spy2-Hapao-Core' ]
+				package: 'Spy2-Hapao-Visualization' with: [ spec requires: 'Spy2-Hapao' ];
+				package: 'Spy2-Hapao-EmmaReport' with: [ spec requires: 'Spy2-Hapao' ]
 				.
 				
 			spec group: 'default' with: #(
