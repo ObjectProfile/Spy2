@@ -24,7 +24,7 @@ Use the stable version of Spy2 for pharo7
 ```Smalltalk
 Metacello new 
 	baseline: 'Spy2'; 
-	repository: 'github://ObjectProfile/Geometry:v1.1.0/src'; 
+	repository: 'github://ObjectProfile/Spy2:v1.0/src'; 
 	load
 ```
 
