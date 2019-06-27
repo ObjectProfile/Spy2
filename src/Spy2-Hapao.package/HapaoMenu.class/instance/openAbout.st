@@ -24,9 +24,15 @@ openAbout
 		stop: 0 @ 10.
 	link := 'https://github.com/ObjectProfile/'.
 	shape := RSShapeBuilder composite
+		allowRepeatCommands;
 		addInteraction: progress;
 		interactionDo: [ :i | i popupText: [ :m | link, m value ]; draggable ];
 		when: TSMouseClick do: [ :m | [ WebBrowser openOn: link, m value ] ];
+		onElement;
+		when: TSMouseDragging do: [ :e | [:evt | 
+			layout fix: e at: evt position - (e extent / 2) ] ];
+		when: TSMouseDragEnd do: [ :e | [ :evt |layout removeFix: e ] ];
+		onModel;
 		color: (Color black alpha: 0.4);
 		shapes: [ :m | 
 			| boxes mborder |

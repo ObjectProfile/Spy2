@@ -1,6 +1,5 @@
 public
 applyLayout: elements on: v
-	| layout |
 	layout := RSForceBasedLayout new
 		initialLayout: RSTreeLayout new;
 		gravityAt: -100 @ -50;
