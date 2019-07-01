@@ -24,6 +24,5 @@ initializeShape
 		edges, methods ];
 		padding: 10;
 		border: self mainBorder;
-		popup; 
-		draggable;
+		interactionDo: #popupAndDraggable;
 		addInteraction: labeled.

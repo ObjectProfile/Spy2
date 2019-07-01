@@ -1,4 +1,6 @@
 public
 rebuild 
-	profiler := Hapao2 runTestsForClasses: (profiler allClasses collect: #theClass).
-	self elementsToShow: #classes.
+	self 
+		profiler: (Hapao2 runTestsForClasses: (profiler allClasses collect: #theClass));
+		createElementsAndEdges;
+	 	elementsToShow: #classes.

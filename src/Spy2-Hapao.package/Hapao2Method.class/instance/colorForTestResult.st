@@ -1,7 +1,7 @@
-as yet unclassified
+accessing - computed
 colorForTestResult
 	"Return a color depending on whether I passed or not"
-	self didIPass ifTrue: [ ^ Color lightGreen ].
-	self didIFail ifTrue: [ ^ Color lightYellow ].
-	self didIError ifTrue: [ ^ Color lightRed ].
+	self didIPass ifTrue: [ ^ Color green ].
+	self didIFail ifTrue: [ ^ Color yellow ].
+	self didIError ifTrue: [ ^ Color red ].
 	^ Color transparent

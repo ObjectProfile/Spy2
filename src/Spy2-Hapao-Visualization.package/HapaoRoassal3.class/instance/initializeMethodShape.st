@@ -10,7 +10,10 @@ initializeMethodShape
 		onModel;
 		addInteraction: self highlightInteraction;
 		popup;
+		extent: #visualExtent;
 		if: #hasBeenExecuted then: [:s | s border: (TSBorder new color: theme textColor) ];
 		if: #abstractMethod then: [:s | s border: (TSBorder new color: Color blue) ];
-		if: #isTest then: [:s | s border: (TSBorder new color: Color green) ];
-		extent: [ :m | (m callersForWidth @ m lineCountForHeight) + 5 ].
+		if: #isTest then: [:s | 
+			s 
+				border: (TSBorder new color: Color green); 
+				color: #colorForTestResult].
