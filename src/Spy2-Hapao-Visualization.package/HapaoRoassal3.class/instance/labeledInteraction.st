@@ -5,8 +5,9 @@ labeledInteraction
 	l := RSLabeled new.
 	label := l shape 
 		color: theme textColor;
-		text: [:el | el model className ].
+		text: [:e | e model className ].
 	l highlightable.
+	l model: #yourself.
 	
 	colors := { Color red. Color orange. Color green }.
 	sc := TSScale linear domain: {0. 50. 100}.
