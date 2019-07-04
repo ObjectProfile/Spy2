@@ -13,5 +13,5 @@ profileClassCategoryAsk
 	
 	classes := self classesOfCategory: categoryToMeasureCoverage.
 	classes ifEmpty: [ ^ self ].
-	classes copy do: [ :c | classes addAll: c unitTestsReferencingMe ].
+	self fetchWithUnitTests: classes.
 	self profileClasses: classes

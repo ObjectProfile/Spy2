@@ -15,6 +15,6 @@ profileClassCategory
 
 	classes := self classesOfCategory: category.
 	classes ifEmpty: [ ^ self ].
-	classes copy do: [ :c | classes addAll: c unitTestsReferencingMe ].
+	self fetchWithUnitTests: classes.
 
 	self profileClasses: classes

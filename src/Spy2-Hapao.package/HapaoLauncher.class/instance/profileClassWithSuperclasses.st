@@ -11,6 +11,6 @@ profileClassWithSuperclasses
 	classToMeasureCoverage ifNil: [ ^ self ].
 	classesToRun := Set new.
 	classesToRun addAll: (classToMeasureCoverage withAllSuperclasses copyFrom: 1 to: (classToMeasureCoverage withAllSuperclasses indexOf: Object) - 1).
-	classesToRun copy do: [ :c | classesToRun addAll: c unitTestsReferencingMe ].
+	self fetchWithUnitTests: classesToRun.
 
 	self profileClasses: classesToRun
