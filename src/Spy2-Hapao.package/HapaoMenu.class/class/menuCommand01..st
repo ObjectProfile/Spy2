@@ -19,34 +19,34 @@ menuCommand01: builder
 				action: [ HapaoLauncher new profileClassAsk ].
 			(builder item: 'HapaoClass3')
 				order: 0.3;
-				label: 'Recent Class with superclass';
+				label: 'Recent Class with superclasses';
 				icon: (self iconNamed: 'smallHierarchyBrowser');
 				action: [ HapaoLauncher new profileClassWithSuperclasses ].
 			(builder item: 'HapaoClass4')
 				order: 0.4;
-				label: 'Class bye name with superclass...';
+				label: 'Class by name with superclasses...';
 				icon: (self iconNamed: 'smallHierarchyBrowser');
 				action: [ HapaoLauncher new profileClassAskWithSuperclasses ].
 				
 			(builder item: 'HapaoClass5')
 				order: 0.5;
-				label: 'Package tag';
+				label: 'Recent Package tag';
 				icon: (self iconNamed: 'protocolExtension');
 				action: [ HapaoLauncher new profileClassCategory ].
 			(builder item: 'HapaoClass6')
 				order: 0.6;
-				label: 'Package tag...';
+				label: 'Package tag by name...';
 				icon: (self iconNamed: 'protocolExtension');
 				action: [ HapaoLauncher new profileClassCategoryAsk ].
 				
 			(builder item: 'HapaoClass7')
 				order: 0.7;
-				label: 'Package';
+				label: 'Recent Package';
 				icon: (self iconNamed: 'configLoaded');
 				action: [ HapaoLauncher new profilePackage ].
 			(builder item: 'HapaoClass8')
 				order: 0.8;
-				label: 'Package...';
+				label: 'Package by name...';
 				icon: (self iconNamed: 'configLoaded');
 				withSeparatorAfter;
 				action: [ HapaoLauncher new profilePackageAsk ].
