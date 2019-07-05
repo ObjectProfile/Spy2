@@ -49,7 +49,7 @@ openAbout
 				width:3;
 				color: Color white;
 				dashArray: #(4).
-			v animation repeat
+			v newAnimation repeat
 				from:0;
 				to: -8;
 				on: mborder set: #dashOffset:.

@@ -33,7 +33,7 @@ visualizeLegend
 			e border dashArray: #(4).
 			anime := mainView attributes 
 				at: #legendAnime
-				ifAbsentPut: [ mainView animation repeat; 
+				ifAbsentPut: [ mainView newAnimation repeat; 
 					duration: 1 second; from: 0; to: -8; yourself ].
 			anime onStepDo: [:t | 
 				e border dashOffset: t. 

@@ -32,7 +32,7 @@ executed';
 				color: Color white).
 	text position: 0 @ 0.
 	v add: text.
-	text animation
+	text newAnimation
 		from: 180 @ -400;
 		to: 180 @ -15;
 		easing: TSEasing bounceOut;

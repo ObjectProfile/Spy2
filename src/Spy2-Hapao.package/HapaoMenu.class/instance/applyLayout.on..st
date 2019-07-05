@@ -8,4 +8,4 @@ applyLayout: elements on: v
 		edges: v edges;
 		start: elements;
 		yourself.
-	v animation repeat onStepDo: [ :t | layout step ]
+	v newAnimation repeat onStepDo: [ :t | layout step ]
