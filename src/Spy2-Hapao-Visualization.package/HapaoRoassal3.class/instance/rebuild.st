@@ -1,7 +1,7 @@
 public
 rebuild 
-	self 
+	[self 
 		profiler: (Hapao2 runTestsForClasses: (profiler allClasses collect: #theClass));
 		createElementsAndEdges;
 		relayout;
-	 	elementsToShow: #classes.
+	 	elementsToShow: #classes ] fork
