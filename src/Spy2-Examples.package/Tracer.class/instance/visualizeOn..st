@@ -1,6 +1,6 @@
 visualization
 visualizeOn: view
-	| b lb |
+	"| b lb |
 	b := RTMondrian new.
 	b view: view.
 	b nodes: trace.
@@ -13,4 +13,4 @@ visualizeOn: view
 	lb view: view.
 	lb addText: 'Each box is a message sent in the profiled application'.
 	lb addText: 'a message name are indicates using the colors'.
-	lb build
+	lb build"

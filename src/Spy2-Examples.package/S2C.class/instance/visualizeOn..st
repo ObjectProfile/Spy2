@@ -2,7 +2,7 @@ visualization
 visualizeOn: view
 	"This is a generated visualization"
 
-	| relevantMethods allExecutedClasses b |
+	"| relevantMethods allExecutedClasses b |
 	relevantMethods := self allMethods select: [ :m | m count > 0 ].
 	allExecutedClasses := (relevantMethods collect: #classSpy) asSet.
 	allExecutedClasses
@@ -22,4 +22,4 @@ visualizeOn: view
 		objects: relevantMethods;
 		normalizeColor: [ :m | m count sqrt ].
 	b layout tree.
-	b build
+	b build"

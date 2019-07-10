@@ -1,7 +1,7 @@
 visualization
 visualizeOn: view
 	"This is a generated visualization"
-	| b |
+	"| b |
 	self setMenuOn: view.
 	
 	b := RTMondrian new.
@@ -15,7 +15,6 @@ visualizeOn: view
 		b build.
 		^ self ].
 	
-	"We are doing a difference"
 	b shape rectangle 
 		size: [ :m | m numberOfExecutions sqrt ];
 		if: [:m | m hasPreviousVersion and: [ m previousMethod hasBeenExecuted and: [ m hasBeenExecuted ] ] ] fillColor: Color gray;
@@ -27,4 +26,4 @@ visualizeOn: view
 	b shape line color: (Color blue alpha: 0.5).
 	b edgesToAll: #callingMethods.
 	b treeLayout.
-	b build 	
+	b build 	"

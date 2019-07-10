@@ -1,15 +1,14 @@
 visualization
 visualizeOn: view
 
-	| b normalizer  doubleBar methodsToRender callGraphElements charterElements legendBuilder |
+	"| b normalizer  doubleBar methodsToRender callGraphElements charterElements legendBuilder |
 	b := RTMondrian new.
 	b view: view.
 	
 	normalizer := RTMultiLinearColorForIdentity new objects: (self allClasses collect: #theClass).
 	b interaction action: #inspect.
 	methodsToRender := self producingMethods.
-	methodsToRender := methodsToRender sortedAs: #selector.
-	"methodsToRender := self allMethods select: #hasBeenExecuted."	
+	methodsToRender := methodsToRender sortedAs: #selector.	
 		
 	b shape rectangle 
 		borderWidth: 2;
@@ -41,7 +40,6 @@ visualizeOn: view
 		b flowLayout gapSize: 2.
 	].
 
-	"b edges: methodsToRender from: #yourself toAll: [ :m | m calledMethods sortedAs: #selector ]."
 	b edges 
 		objects: methodsToRender;
 		connectFrom: #yourself toAll: [ :m | m calledMethods sortedAs: #selector ].
@@ -50,14 +48,10 @@ visualizeOn: view
 	self setMenuOn: b view.
 	b build.
 	
-	"-------------------"
-	"----- Charter -----"
-	"-------------------"
 	callGraphElements := b view elements.
 	doubleBar := RTDoubleBarBuilder new.
 	doubleBar view: b view. 
 
-	"Set the colors for the charter labels"
 	self isReadyForComparison 
 		ifTrue: [ 
 			doubleBar interaction 
@@ -92,7 +86,6 @@ visualizeOn: view
 	TRConstraint move: charterElements onTheRightOf: callGraphElements.
 	charterElements translateBy: 10 @ 0.
 
-	"----- Legend -----"
 	legendBuilder := RTLegendBuilder new.
 	legendBuilder view: b view.
 	legendBuilder addColoredText: '-= Memory blueprint =-' color: Color black.
@@ -101,3 +94,4 @@ visualizeOn: view
 	legendBuilder addText: ((self ratioOfMethodProducingObjects * 100) round: 4) printString, ' % methods producing objects'.
 	legendBuilder build.
 	TRConstraint move: legendBuilder legendElement above: charterElements.
+"

@@ -1,7 +1,7 @@
 visualization
 visualizeOn: v
 	"v is a Roassal view"
-	| b |
+	"| b |
 	b := RTMondrian new.
 	b view: v.
 	
@@ -12,4 +12,4 @@ visualizeOn: v
 		b nodes: (self >> pharoCls name) groups.
 		b layout flow.
 	].
-	b build.
+	b build."

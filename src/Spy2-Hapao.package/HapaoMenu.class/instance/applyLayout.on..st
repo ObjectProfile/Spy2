@@ -1,11 +1,12 @@
 public
 applyLayout: elements on: v
-	layout := RSForceBasedLayout new
+	layout := RSForceBasedLayout new.
+	elements @ (RSDraggableForce new layout: layout).
+	layout
 		initialLayout: RSTreeLayout new;
-		gravityAt: -100 @ -50;
+		center: -100 @ -50;
 		length: 150;
 		nodes: elements;
 		edges: v edges;
-		start: elements;
-		yourself.
+		start.
 	v newAnimation repeat onStepDo: [ :t | layout step ]

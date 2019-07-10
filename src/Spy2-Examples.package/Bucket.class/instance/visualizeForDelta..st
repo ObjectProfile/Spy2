@@ -3,7 +3,7 @@ visualizeForDelta: aDelta
 	"
 	#(4 5 5 5 5 6 7 8 8 8 8 8) groupedBy: #yourself
 	"
-	| v allElement values shape es  allLabels label |
+	"| v allElement values shape es  allLabels label |
 	v := RTView new.
 	allElement := RTGroup new.
 	allLabels := RTGroup new.
@@ -20,7 +20,7 @@ visualizeForDelta: aDelta
 		es @ RTPopup.
 		v addAll: es.
 		label := RTLabel elementOn: assoc key.
-		"v add: label."
+		
 		allLabels add: label.
 	].
 	RTVerticalLineLayout on: allElement.
@@ -28,7 +28,7 @@ visualizeForDelta: aDelta
 	TRConstraint move: allLabels onTheLeftOf: allElement.
 	RTMetricNormalizer new
 		elements: (allElement flatCollect: #yourself);
-		normalizeSize: [ :ass | ass value value ].
+		normalizeSize: [ :ass | ass value value ]."
 		
 "	data associations with: allElement do: [ :assoc :elements |
 		label := RTLabel elementOn: assoc key.
@@ -36,4 +36,4 @@ visualizeForDelta: aDelta
 		TRConstraint stick: label onTheLeftOf: elements first.
 
 	]."
-	^ v
+	"^ v"

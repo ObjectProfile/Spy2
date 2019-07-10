@@ -1,7 +1,7 @@
 visualization
 visualizeOn: view
 	"This is a generated visualization"
-	| b |
+	"| b |
 	view @ RTDraggableView.
 	
 	b := RTMondrian new.
@@ -15,4 +15,4 @@ visualizeOn: view
 	b shape orthoVerticalLine.
 	b edges connectFrom: #superclass.
 	b layout tree.
-	b build
+	b build"

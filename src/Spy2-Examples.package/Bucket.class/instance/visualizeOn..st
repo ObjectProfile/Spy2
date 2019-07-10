@@ -3,7 +3,7 @@ visualizeOn: v
 	"
 	#(4 5 5 5 5 6 7 8 8 8 8 8) groupedBy: #yourself
 	"
-	| delta allElement values shape es  allLabels label labels |
+	"| delta allElement values shape es  allLabels label labels |
 	delta := 100.
 	allElement := RTGroup new.
 	allLabels := RTGroup new.
@@ -20,7 +20,6 @@ visualizeOn: v
 		es @ RTPopup.
 		v addAll: es.
 		label := RTLabel elementOn: assoc key.
-		"v add: label."
 		allLabels add: label.
 	].
 	RTVerticalLineLayout on: allElement.
@@ -38,4 +37,4 @@ visualizeOn: v
 		TRConstraint stick: label onTheLeftOf: elements first.
 	].
 	RTAlignment new elements: labels; left.
-	^ v
+	^ v"

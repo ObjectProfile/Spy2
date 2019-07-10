@@ -1,7 +1,7 @@
 visualization
 visualizeOn: view
 	"This is a generated visualization"
-	| allClasses  classShapeBuilder methodShapeBuilder  interactionBuilder classElements|
+	"| allClasses  classShapeBuilder methodShapeBuilder  interactionBuilder classElements|
 	interactionBuilder := self getInteractionBuilder.
 	classShapeBuilder := self getClassShapeBuilder.
 	methodShapeBuilder := self getMethodShapeBuilder.
@@ -21,4 +21,4 @@ visualizeOn: view
 	].
 	interactionBuilder setUpElements: classElements.
 	RTGridLayout on: classElements
-	
+	"

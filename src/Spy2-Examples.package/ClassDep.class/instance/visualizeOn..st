@@ -1,6 +1,6 @@
 visualization
 visualizeOn: view
-	| c |
+	"| c |
 	c := RTComposer new.
 	c gap: 35.
 	c view: view.
@@ -10,3 +10,4 @@ visualizeOn: view
 	].
 	c layout: RTCellLayout new.
 	^ view
+"
