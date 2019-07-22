@@ -5,6 +5,5 @@ elementsToShow: key
 	shapes := current key.
 	
 	mainView canvas shapes: shapes. 
-	lightInteraction shapes: mainView shapes.
 	mainView zoomToFit.
 	

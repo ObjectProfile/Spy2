@@ -44,7 +44,7 @@ visualizeLegend
 		rec := b defaultBox element.
 		rec noPaint; size: 20.
 		g add: rec.
-		g add: (b defLabel elementOn: m).
+		g add: (b defaultLabel elementOn: m).
 		g 
 		].
 	simpleGraph := RSShapeBuilder composite shapes: [ | g |
@@ -56,5 +56,5 @@ visualizeLegend
 		g  ].
 	b custom: 'A depends on B' shape: (b 
 		horizontalComposite: simpleGraph
-		text: b defLabel).
+		text: b defaultLabel).
 	b build

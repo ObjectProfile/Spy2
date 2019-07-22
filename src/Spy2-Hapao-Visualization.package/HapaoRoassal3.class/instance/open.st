@@ -11,6 +11,5 @@ open
 	self elementsToShow: 'Classes'.
 	
 	mainView @ RSControlsView.
-	mainView addInteraction: lightInteraction .
 	mainView open setLabel: 'Hapao Visualization'.
 	
