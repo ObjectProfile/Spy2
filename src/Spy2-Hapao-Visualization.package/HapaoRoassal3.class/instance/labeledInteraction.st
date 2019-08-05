@@ -41,7 +41,7 @@ labeledInteraction
 			extent: p @ 4.
 		g add: title; add: box1.
 		vertical on: g.
-		RSLocate new left; move: box2 on: box1.
+		RSLocation new left; move: box2 on: box1.
 		g add: box2.
 		g ];
 		padding: 0@5.
