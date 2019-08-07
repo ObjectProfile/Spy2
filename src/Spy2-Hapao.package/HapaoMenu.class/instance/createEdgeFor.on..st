@@ -12,7 +12,7 @@ createEdgeFor: elements on: v
 		size: 20;
 		paint: markerPaint;
 		border: (TSBorder new color: Color white);
-		element) trachelShape asMarker offset: 10.
+		element) shape asMarker offset: 10.
 	v
 		add:
 			(RSSingleEdgeBuilder line

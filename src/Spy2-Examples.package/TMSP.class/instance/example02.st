@@ -20,7 +20,7 @@ example02
 		withAllSubclasses from: #superclass to: #yourself inView: view.
 	RTTreeLayout on: view elements edges: view edges.
 	view @ RTDraggableView.
-	view edges do: [ :e | e trachelShape pushBack ].
+	view edges do: [ :e | e shape pushBack ].
 	
 	] 
 			onPackageNamed: 'Roassal2';

@@ -36,4 +36,4 @@ executed';
 		from: 180 @ -400;
 		to: 180 @ -15;
 		easing: TSEasing bounceOut;
-		on: text trachelShape set: #position:
+		on: text shape set: #position:

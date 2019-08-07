@@ -31,4 +31,4 @@ edgeBuilder
 		markerStart: ((RSShapeBuilder triangle size: 10; 
 			color: Smalltalk ui theme backgroundColor;
 			border: self mainBorder;
-			element) trachelShape asMarker offset: 5)
+			element) shape asMarker offset: 5)

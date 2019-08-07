@@ -27,7 +27,7 @@ addMenuControl
 	buttons last when: TSMouseClick do: [ self rebuild ].
 	buttons do: [ :b | 
 		b view: mainView. "for highlight interaction"
-		mainView addShape: b trachelShape ].
+		mainView addShape: b shape ].
 	
 	RSHorizontalLineLayout on: buttons.
 	buttons translateBy: 5@5.
