@@ -1,4 +1,4 @@
 accessing
 mainBorder
-	^ mainBorder ifNil: [ mainBorder := TSBorder new
+	^ mainBorder ifNil: [ mainBorder := RSBorder new
 		color: Smalltalk ui theme textColor ].

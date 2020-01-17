@@ -8,9 +8,8 @@ profilePackageAsk
 
 	| packageNamesArrayOfRegExp |
 	packageNamesArrayOfRegExp := UIManager default
-		request:
-			'Enter a pattern of a Package (e.g., ''Trachel'', ''Trach* Roassal*'')'
-		initialAnswer: 'Roassal3-Trachel*'
+		request: 'Enter a pattern of a Package (e.g., ''Trachel'', ''Roassal*'')'
+		initialAnswer: 'Roassal3'
 		title: 'Enter the name of a package to measure the coverage'.
 	packageNamesArrayOfRegExp ifNil: [ ^ nil ].
 	packageNamesArrayOfRegExp := packageNamesArrayOfRegExp trimBoth.

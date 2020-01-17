@@ -11,12 +11,16 @@
 		"methodShape",
 		"colorScale",
 		"lightInteraction",
-		"mainView",
 		"classesShape",
 		"testsShape",
 		"edgeBuilder",
 		"current",
-		"mainBorder"
+		"mainBorder",
+		"mainCanvas",
+		"basicMethodShape",
+		"methodHiglightInteraction",
+		"basicClassShape",
+		"labeledInteraction"
 	],
 	"name" : "HapaoRoassal3",
 	"type" : "normal"

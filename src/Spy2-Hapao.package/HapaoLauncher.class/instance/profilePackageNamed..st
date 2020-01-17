@@ -2,6 +2,5 @@ public - profiling
 profilePackageNamed: packageNamesArrayOfRegExp
 	| classes |
 	classes := self classesOfPackagesMatching: packageNamesArrayOfRegExp.
-	classes size = 0
-		ifTrue: [ ^ self ].
+	classes ifEmpty: [ ^ self ].
 	self profileClasses: classes

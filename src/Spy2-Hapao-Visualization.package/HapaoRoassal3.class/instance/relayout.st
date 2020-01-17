@@ -2,8 +2,8 @@ layout
 relayout 
 	RSRectanglePackLayout new
 		gap: 0.5;
-		preferredAngle: mainView extent angle;
+		preferredAngle: mainCanvas extent angle;
 		on: classesShape value;
 		on: testsShape value.
-	mainView zoomToFit; signalUpdate.
+	mainCanvas zoomToFit; signalUpdate.
 	

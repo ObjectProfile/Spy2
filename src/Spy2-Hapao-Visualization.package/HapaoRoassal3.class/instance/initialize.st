@@ -1,5 +1,4 @@
 initialization
 initialize
 	super initialize.
-	mainView := RSView new.
-	self initializeShape.
+	mainCanvas := RSCanvas new.

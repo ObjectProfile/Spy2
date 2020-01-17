@@ -1,3 +1,3 @@
 utilities
 lastUserInput
-	^ userInput ifNil: [ userInput := 'RSView' ].
+	^ userInput ifNil: [ userInput := 'RSCanvas' ].

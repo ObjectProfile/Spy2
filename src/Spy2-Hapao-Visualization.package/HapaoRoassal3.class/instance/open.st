@@ -1,15 +1,15 @@
 visualization
 open
-	mainView := RSView new.
-	mainView color: Smalltalk ui theme backgroundColor.
+	mainCanvas := RSCanvas new.
+	mainCanvas color: Smalltalk ui theme backgroundColor.
 	self createElementsAndEdges.
 	self visualizeLegend.
 	self addMenuControl.
-	mainView 
-		when: TSExtentChangedEvent 
+	mainCanvas 
+		when: RSExtentChangedEvent 
 		do: [ self relayout ].
 	self elementsToShow: 'Classes'.
 	
-	mainView @ RSControlsView.
-	mainView open setLabel: 'Hapao Visualization'.
+	mainCanvas @ RSCanvasController new noLegend.
+	mainCanvas open setLabel: 'Hapao Visualization'.
 	
