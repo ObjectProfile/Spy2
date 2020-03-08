@@ -22,6 +22,103 @@ Metacello new
 ```
 
 ----
+# Tutorial
+
+This short-tutorial assumes you have the complete installation of Spy, thus including Roassal3. The tutorial is about building a profiler that monitor the number of object creations for each class, and the number of execution of each method. Afterward, a visualization is built to convey information gathered during an execution.
+
+## Step 1 - Building a skeleton for the profiler
+We give the name `DynAnalyzer` to our profiler and the package `Spy2DemoProfiler` will contain all the related code. A skeleton is created by executing the following code in a playground:
+
+```Smalltalk
+Spy2 generate: 'DynAnalyzer' category: 'Spy2DemoProfiler'
+```
+
+The skeleton is made of four classes: `DynAnalyzer`, `DynAnalyzerPackage`, `DynAnalyzerClass`, and `DynAnalyzerMethod`.
+
+## Step 2 - Counting method execution
+
+We need to add an instance variable to the class `DynAnalyzerMethod`. The variable `numberOfExecutions` keeps the number of execution for each method of the profiled application.
+
+```Smalltalk
+S2Method subclass: #DynAnalyzerMethod
+	instanceVariableNames: 'numberOfExecutions'
+	classVariableNames: ''
+	package: 'Spy2DemoProfiler'
+```
+
+The variable is initialized using: 
+
+```Smalltalk
+DynAnalyzerMethod>>initialize
+	super initialize.
+	numberOfExecutions := 0
+```
+
+We need a way to access it:
+
+```Smalltalk
+DynAnalyzerMethod>>numberOfExecutions
+	^ numberOfExecutions
+```
+
+The variable has to be incremented at each method execution:
+```Smalltalk
+DynAnalyzerMethod>>beforeRun: methodName with: listOfArguments in: receiver
+	"This method is executed before each method of the profiled application.
+	 Insert here the instrumentation you would like to perform during the profiling."
+	counter := counter + 1
+```
+
+Visualization
+```Smalltalk
+c := RSCanvas new.
+executedClasses := self allClasses select: [ :c | c allMethods anySatisfy: [ :m | m numberOfExecutions > 0 ] ].
+executedClasses do: [ :clsSpy |
+	"Name of the class"
+	label := RSLabel new text: clsSpy className.
+	
+	"Build the method visual elements"
+	methods := clsSpy methods collect: [ :m |
+		RSBox new model: m; size: ((m numberOfExecutions sqrt) max: 4) ; color: Color blue ] as: RSGroup.
+	
+	"Make all the method located as a grid"
+	RSGridLayout on: methods.
+	
+	methods @ RSPopup.
+	
+	"Locate the label above the methods"
+	RSLocation new above; move: label on: methods.
+	
+	composite := RSComposite new.
+	composite model: cls.
+	composite color: Color veryVeryLightGray.
+	composite shapes: { label }, methods.
+	composite @ RSDraggable.
+	composite padding: 10.
+	
+	c add: composite.
+].
+
+RSFlowLayout on: c shapes.
+
+c @ RSCanvasController
+```
+
+## Step 
+
+DynAnalyzer new
+	profile: [ RSShapeExamples new example10Donut open ] 
+	onPackagesMatchingExpresions: #('Roassal3*')
+	
+	
+	
+
+basicNewPlugin
+	<S2ClassPlugin>
+	^ S2SpecialBehaviorPlugin basicNewPluginOn: self
+
+
+
 ----
 
 
