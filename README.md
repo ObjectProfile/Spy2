@@ -188,6 +188,8 @@ Result of the execution is:
 
 ![alt text](screenshots/tutorial01-01.png]
 	
+The visualization represents classes as a box with methods in it. The size of the method represents the number of executions the method was executed during the execution. Class boxes faces from gray to red. A red class is the class that has the most objects created from it. On the example, hovering the mouse above the `RSEllipse` indicates that the expression `RSShapeExamples new example10Donut open` creates 1800 objects from that class.
+
 
 ----
 
