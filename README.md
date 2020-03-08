@@ -66,8 +66,49 @@ The variable has to be incremented at each method execution:
 DynAnalyzerMethod>>beforeRun: methodName with: listOfArguments in: receiver
 	"This method is executed before each method of the profiled application.
 	 Insert here the instrumentation you would like to perform during the profiling."
-	counter := counter + 1
+	numberOfExecutions := numberOfExecutions + 1
 ```
+
+## Step 3 - Counting objects
+
+```Smalltalk
+S2Class subclass: #DynAnalyzerClass
+	instanceVariableNames: 'numberOfObjects'
+	classVariableNames: ''
+	package: 'Spy2DemoProfiler'
+```
+
+```Smalltalk
+DynAnalyzerClass>>initialize
+	super initialize.
+	numberOfObjects := 0.
+```
+
+```Smalltalk
+DynAnalyzerClass>>increaseNumberOfObjects 
+	numberOfObjects := numberOfObjects + 1
+```
+
+We now need to make our profiler call `increaseNumberOfObjects` whenever a new object is created. Spy2 offers a dedicated pluggin for this:
+
+```Smalltalk
+DynAnalyzer>>basicNewPlugin
+	<S2ClassPlugin>
+	^ S2SpecialBehaviorPlugin basicNewPluginOn: self
+```
+
+The method `onBasicNew:` is called on the profiler when a new object is created. This is where we should increase the number of objects:
+
+```Smalltalk
+DynAnalyzer>>onBasicNew: obj
+	"obj is a newly created object"
+	(obj class getSpy: self) increaseNumberOfObjects
+```
+
+
+
+
+
 
 Visualization
 ```Smalltalk
