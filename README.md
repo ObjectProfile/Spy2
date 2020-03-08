@@ -106,59 +106,88 @@ DynAnalyzer>>onBasicNew: obj
 ```
 
 
+## Step 4 - Visualization
 
+We will redefine the method `printOn:` to indicate the number of objects created:
 
-
-
-Visualization
 ```Smalltalk
-c := RSCanvas new.
-executedClasses := self allClasses select: [ :c | c allMethods anySatisfy: [ :m | m numberOfExecutions > 0 ] ].
-executedClasses do: [ :clsSpy |
-	"Name of the class"
-	label := RSLabel new text: clsSpy className.
-	
-	"Build the method visual elements"
-	methods := clsSpy methods collect: [ :m |
-		RSBox new model: m; size: ((m numberOfExecutions sqrt) max: 4) ; color: Color blue ] as: RSGroup.
-	
-	"Make all the method located as a grid"
-	RSGridLayout on: methods.
-	
-	methods @ RSPopup.
-	
-	"Locate the label above the methods"
-	RSLocation new above; move: label on: methods.
-	
-	composite := RSComposite new.
-	composite model: cls.
-	composite color: Color veryVeryLightGray.
-	composite shapes: { label }, methods.
-	composite @ RSDraggable.
-	composite padding: 10.
-	
-	c add: composite.
-].
-
-RSFlowLayout on: c shapes.
-
-c @ RSCanvasController
+DynAnalyzerClass>>printOn: str
+	super printOn: str.
+	str nextPutAll: self className.
+	str nextPutAll: ' - '.
+	str nextPutAll: numberOfObjects asString. 
+	str nextPutAll: ' created objects'.
 ```
 
-## Step 
+We build a dedicated visualization using Roassal3. Consider the method: 
 
+```Smalltalk
+DynAnalyzer>>gtInspectorViewIn: composite
+	<gtInspectorPresentationOrder: -10>
+	composite roassal3
+		title: 'View';
+		initializeCanvas: [
+			self buildCanvas
+			]
+```
+
+```Smalltalk
+DynAnalyzer>>buildCanvas
+	| c executedClasses label methods composite |
+	c := RSCanvas new.
+	executedClasses := self allClasses
+		select:
+			[ :clsSpy | clsSpy allMethods anySatisfy: [ :m | m numberOfExecutions > 0 ] ].
+	executedClasses
+		do: [ :clsSpy | 
+			"Name of the class"
+			label := RSLabel new text: clsSpy className.
+
+			"Build the method visual elements"
+			methods := clsSpy methods
+				collect: [ :m | 
+					RSBox new
+						model: m;
+						size: (m numberOfExecutions sqrt max: 4);
+						color: Color blue ]
+				as: RSGroup.
+
+			"Make all the method located as a grid"
+			RSGridLayout on: methods.
+			methods @ RSPopup.
+
+			"Locate the label above the methods"
+			RSLocation new
+				above;
+				move: label on: methods.
+			composite := RSComposite new.
+			composite model: clsSpy.
+			composite color: Color veryVeryLightGray.
+			composite shapes: {label} , methods.
+			composite @ RSDraggable.
+			composite padding: 10.
+			c add: composite.
+			composite @ RSPopup ].
+	RSFlowLayout on: c shapes.
+	RSNormalizer color
+		shapes: c shapes;
+		from: Color gray;
+		to: Color lightRed;
+		normalize: #numberOfObjects.
+	c @ RSCanvasController.
+	^ c
+```
+
+```Smalltalk
 DynAnalyzer new
 	profile: [ RSShapeExamples new example10Donut open ] 
 	onPackagesMatchingExpresions: #('Roassal3*')
-	
-	
-	
+```
 
-basicNewPlugin
-	<S2ClassPlugin>
-	^ S2SpecialBehaviorPlugin basicNewPluginOn: self
+Result of the execution is:
 
-
+![alt text](screenshots/tutorial01-01.png]
+	
 
 ----
 
