@@ -1,7 +1,7 @@
 # Spy2
-Spy2 is a profiling framework for Pharo, useful to gather some information about dynamic execution for a given piece of code. 
+Comprehending software execution is known to be a difficult, albeit essential task when building software. Spy2 is a profiling framework for Pharo, useful to gather some information about dynamic execution for a given piece of code. Spy2 allows one to easily build specific code profilers.
 
-Spy2 may be installed on Pharo 8 and Pharo 9. using the expression:
+Spy2 may be installed on Pharo 8 and Pharo 9 using the expression:
 
 ```Smalltalk
 Metacello new 
@@ -12,7 +12,7 @@ Metacello new
 
 Spy2 is also available on the Pharo Catalog Browser.
 
-Spy2 depends on [Roassal3](https://github.com/ObjectProfile/Roassal3/). The core of Spy2, therefore without any external dependencies, may be loaded using:
+Spy2 depends on [Roassal3](https://github.com/ObjectProfile/Roassal3/) since some of the accompagning profilers use visualization. The core of Spy2, without any external dependencies, may be loaded using:
 
 ```Smalltalk
 Metacello new 
@@ -24,7 +24,7 @@ Metacello new
 ----
 # Tutorial
 
-This short-tutorial assumes you have the complete installation of Spy, thus including Roassal3. The tutorial is about building a profiler that monitor the number of object creations for each class, and the number of execution of each method. Afterward, a visualization is built to convey information gathered during an execution.
+This short-tutorial assumes you have the complete installation of Spy, which includes Roassal3. The tutorial is about building a profiler that monitors the number of object creations for each class, and the number of times a method is executed. Afterward, a visualization is built to convey information gathered during an execution.
 
 ## Step 1 - Building a skeleton for the profiler
 We give the name `DynAnalyzer` to our profiler and the package `Spy2DemoProfiler` will contain all the related code. A skeleton is created by executing the following code in a playground:
