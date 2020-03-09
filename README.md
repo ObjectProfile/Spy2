@@ -72,6 +72,8 @@ DynAnalyzerMethod>>beforeRun: methodName with: listOfArguments in: receiver
 
 ## Step 3 - Counting objects
 
+We keep the number of objects in the class `DynAnalyzerClass`:
+
 ```Smalltalk
 S2Class subclass: #DynAnalyzerClass
 	instanceVariableNames: 'numberOfObjects'
@@ -79,15 +81,23 @@ S2Class subclass: #DynAnalyzerClass
 	package: 'Spy2DemoProfiler'
 ```
 
+When created, we simply initialize this variable to 0:
 ```Smalltalk
 DynAnalyzerClass>>initialize
 	super initialize.
 	numberOfObjects := 0.
 ```
 
+A small utility method to increase the number of created objects:
 ```Smalltalk
 DynAnalyzerClass>>increaseNumberOfObjects 
 	numberOfObjects := numberOfObjects + 1
+```
+
+The number of objects has to be accessible:
+```Smalltalk
+DynAnalyzerClass>>numberOfObjects 
+	^ numberOfObjects
 ```
 
 We now need to make our profiler call `increaseNumberOfObjects` whenever a new object is created. Spy2 offers a dedicated pluggin for this:
@@ -127,10 +137,10 @@ DynAnalyzer>>gtInspectorViewIn: composite
 	<gtInspectorPresentationOrder: -10>
 	composite roassal3
 		title: 'View';
-		initializeCanvas: [
-			self buildCanvas
-			]
+		initializeCanvas: [ self buildCanvas ]
 ```
+
+The visualization is implemented using `buildCanvas`:
 
 ```Smalltalk
 DynAnalyzer>>buildCanvas
@@ -191,6 +201,14 @@ Result of the execution is:
 	
 The visualization represents classes as a box with methods in it. The size of the method represents the number of executions the method was executed during the execution. Class boxes faces from gray to red. A red class is the class that has the most objects created from it. On the example, hovering the mouse above the `RSEllipse` indicates that the expression `RSShapeExamples new example10Donut open` creates 1800 objects from that class.
 
+Another example could be:
+
+```Smalltalk
+DynAnalyzer new
+	profile: [ RSShapeExamples new example07NormalizeColor open ] 
+	onPackagesMatchingExpresions: #('Roassal3*')
+```
+![alt text](screenshots/tutorial01-02.png]
 
 ----
 
