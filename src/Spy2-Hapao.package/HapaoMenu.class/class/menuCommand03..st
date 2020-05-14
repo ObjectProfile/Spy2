@@ -22,10 +22,4 @@ menuCommand03: builder
 		parent: #Hapao;
 		icon: (self iconNamed: 'smallDebug');
 		action: [ WebBrowser openOn: 'https://github.com/ObjectProfile/Spy2/issues/new' ].	
-	(builder item: 'HapaoAbout')
-		order: 0.6;
-		label: 'About Hapao';
-		parent: #Hapao;
-		icon: (self iconNamed: 'smallInfo');
-		action: [ self new openAbout. ].
 	

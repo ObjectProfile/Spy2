@@ -1,9 +1,9 @@
 public
 openAbout
 	<script: 'self new openAbout'>
-	| v spy2 hapao profilers progress shape elements box textPaint border boxPaint link |
-	v := RSView new.
-	v color: (Color colorFrom: '1F60E1').
+	| canvas spy2 hapao profilers progress shapes label textPaint border boxPaint link |
+	canvas := RSCanvas new.
+	canvas color: (Color colorFrom: '1F60E1').
 	spy2 := {'Spy' . '2'}.
 	hapao := {'Hapao'}.
 	profilers := {spy2 -> 'Spy2'. hapao ->'Hapao'}.
@@ -11,55 +11,62 @@ openAbout
 	textPaint := self textPaint
 		start: 0 @  -10;
 		stop: 0 @ 10.
-	box := RSShapeBuilder multiline
+	
+	label := RSLabel new
 		bold;
 		paint: textPaint;
 		fontSize: 20.
-	border := TSBorder new color: Color white.
-	boxPaint := (TSGradientPalette
-		linearGradient:
+	border := RSBorder new color: Color white.
+	boxPaint := (LinearGradientPaint fromArray:
 			{(0 -> Color black).
 			(1 -> Color transparent)})
 		start: 0 @  -10;
 		stop: 0 @ 10.
 	link := 'https://github.com/ObjectProfile/'.
-	shape := RSShapeBuilder composite
-		allowRepeatCommands;
-		addInteraction: progress;
-		interactionDo: [ :i | i popupText: [ :m | link, m value ] ];
-		when: TSMouseClick do: [ :m | [ WebBrowser openOn: link, m value ] ];
-		color: (Color black alpha: 0.4);
-		shapes: [ :m | 
-			| boxes mborder |
-			boxes := box elementsOn: m key.
-			boxes do: [ :b | 
-				b
-					border: border;
-					paint: boxPaint;
-					padding: 5 ].
-			RSHorizontalLineLayout new 
-				gapSize: 20;
-				on: boxes.
-			mborder := TSBorder new 
-				width:3;
-				color: Color white;
-				dashArray: #(4).
-			v newAnimation repeat
-				from:0;
-				to: -8;
-				on: mborder set: #dashOffset:.
-			boxes add: (RSSingleEdgeBuilder line
-				withHorizontalAttachPoint;
-				border: mborder;
-				from: boxes first;
-				to: boxes last;
-				edge). 
-			boxes ];
-		padding: 10.
-	elements := shape elementsOn: profilers.
-	self createEdgeFor: elements on: v.
-	v addAll: elements.
-	self applyLayout: elements on: v.
-	self addFootShape: v.
-	self addTextLegend: v.
-	self setupWindow: v
+	
+	shapes := profilers collect: [:m |
+		| boxes mborder |
+		boxes := m key collect: [ :val | 
+			RSComposite new
+				add: (label copy text: val);
+				adjustToChildren;
+				border: border;
+				paint: boxPaint;
+				padding: 5;
+				yourself
+			 ] as: RSGroup.
+		RSHorizontalLineLayout new 
+			gapSize: 20;
+			on: boxes.
+		mborder := RSBorder new 
+			width:3;
+			color: Color white;
+			dashArray: #(4).
+		canvas newAnimation repeat
+			from:0;
+			to: -8;
+			on: mborder set: #dashOffset:.
+		boxes add: (RSLine new
+			withHorizontalAttachPoint;
+			border: mborder;
+			from: boxes first;
+			to: boxes last;
+			yourself). 
+		
+		
+		RSComposite new
+			@ progress;
+			model: m;
+			popupText: [ :mo | link, mo value ];
+			when: RSMouseClick do: [ :evt | WebBrowser openOn: link, m value ];
+			color: (Color black alpha: 0.4);
+			shapes: boxes;
+			padding: 10;
+			yourself
+		 ] as: RSGroup.
+	self createEdgeFor: shapes on: canvas.
+	canvas addAll: shapes.
+	self applyLayout: shapes on: canvas.
+	self addFootShape: canvas.
+	self addTextLegend: canvas.
+	self setupWindow: canvas

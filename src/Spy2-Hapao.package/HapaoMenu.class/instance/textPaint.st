@@ -1,3 +1,3 @@
 public
 textPaint
-	^ TSGradientPalette linearGradient: {0 -> 'FEFDFB'. 1 -> 'B7B6EC'}
+	^ LinearGradientPaint fromArray: {0 -> 'FEFDFB'. 1 -> 'B7B6EC'}

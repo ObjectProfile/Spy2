@@ -1,7 +1,7 @@
 public
-setupWindow: v
+setupWindow: canvas
 	| window |
-	window := v open
+	window := canvas open
 		extent: 600 @ 400;
 		setLabel: 'About Sp2';
 		beUnresizeable.

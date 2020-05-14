@@ -1,20 +1,18 @@
 public
-addFootShape: v
+addFootShape: canvas
 	| borderPaint foot |
-	borderPaint := (TSGradientPalette
-		linearGradient:
+	borderPaint := (LinearGradientPaint fromArray:
 			{(0 -> Color transparent).
 			(0.5 -> Color white).
 			(1 -> Color transparent)})
 		start: -500 @ 0;
 		stop: 500 @ 0.
-	foot := RSShapeBuilder composite
+	foot := RSComposite new
 		color: (Color black alpha: 0.4);
-		border:
-			(TSBorder new
-				width: 2.5;
-				paint: borderPaint);
+		border: (RSBorder new
+			width: 2.5;
+			paint: borderPaint);
 		position: 0 @ 140;
 		extent: 600 @ 100;
-		element.
-	v add: foot
+		yourself.
+	canvas add: foot

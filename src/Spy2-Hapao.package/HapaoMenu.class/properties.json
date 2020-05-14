@@ -3,7 +3,8 @@
 	"super" : "Object",
 	"category" : "Spy2-Hapao-WorldMenu",
 	"classinstvars" : [
-		"icon"
+		"icon",
+		"discord"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],

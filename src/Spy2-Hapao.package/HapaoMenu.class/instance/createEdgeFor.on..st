@@ -1,23 +1,19 @@
 public
-createEdgeFor: elements on: v
+createEdgeFor: shapes on: canvas
 	| markerPaint marker |
-	markerPaint := (TSGradientPalette
-		linearGradient:
+	markerPaint := (LinearGradientPaint fromArray:
 		{(0 -> Color black).
 	(0.5 -> (Color black alpha: 0.8)).
 	(1 -> Color transparent)})
 		start: 0 @ -10;
 		stop: 0 @ 10.
-	marker := (RSShapeBuilder triangle
+	marker := (RSShapeFactory triangle
 		size: 20;
 		paint: markerPaint;
-		border: (TSBorder new color: Color white);
-		element) shape asMarker offset: 10.
-	v
-		add:
-			(RSSingleEdgeBuilder line
-				withBorderAttachPoint;
-				markerStart: marker;
-				from: elements first;
-				to: elements second;
-				edge)
+		border: (RSBorder new color: Color white)) asMarker offset: 10.
+	canvas add: (RSLine new
+		withBorderAttachPoint;
+		markerStart: marker;
+		from: shapes first;
+		to: shapes second;
+		yourself)

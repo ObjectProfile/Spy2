@@ -1,12 +1,12 @@
 public
-applyLayout: elements on: v
+applyLayout: shapes on: canvas
 	layout := RSForceBasedLayout new.
-	elements @ (RSDraggableForce new layout: layout).
+	shapes @ (RSDraggableForce new layout: layout).
 	layout
 		initialLayout: RSTreeLayout new;
 		center: -100 @ -50;
 		length: 150;
-		nodes: elements;
-		edges: v edges;
+		nodes: shapes;
+		edges: canvas edges;
 		start.
-	v newAnimation repeat onStepDo: [ :t | layout step ]
+	canvas newAnimation repeat onStepDo: [ :t | layout step ]
