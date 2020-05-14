@@ -7,7 +7,7 @@ Spy2 may be installed on Pharo 8 and Pharo 9 using the expression:
 ```Smalltalk
 Metacello new 
 	baseline: 'Spy2'; 
-	repository: 'github://ObjectProfile/Spy2/src'; 
+	repository: 'github://ObjectProfile/Spy2'; 
 	load
 ```  
 
@@ -18,7 +18,7 @@ Spy2 depends on [Roassal3](https://github.com/ObjectProfile/Roassal3/) since som
 ```Smalltalk
 Metacello new 
 	baseline: 'Spy2'; 
-	repository: 'github://ObjectProfile/Spy2/src'; 
+	repository: 'github://ObjectProfile/Spy2'; 
 	load: 'Core'
 ```
 
