@@ -5,7 +5,9 @@ baseline: spec
 		for: #common
 		do: [			
 			spec baseline: 'Roassal3' with: [ 
-				spec repository: 'github://ObjectProfile/Roassal3/src' ].
+				spec
+					loads: 'Core';
+					repository: 'github://ObjectProfile/Roassal3' ].
 					
 			spec
 				package: 'Spy2-Core';

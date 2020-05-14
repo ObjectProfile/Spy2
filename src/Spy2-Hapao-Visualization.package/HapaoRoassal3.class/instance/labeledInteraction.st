@@ -8,7 +8,7 @@ labeledInteraction
 	labeledInteraction model: #yourself.
 	
 	colors := { Color red. Color orange. Color green }.
-	sc := TSScale linear domain: {0. 50. 100}.
+	sc := NSScale linear domain: {0. 50. 100}.
 	vertical := RSVerticalLineLayout new gapSize: 0; alignCenter.
 	corner1 := RSCornerRadius new radius: 2.5.
 	corner2 := RSCornerRadius new left: 2.

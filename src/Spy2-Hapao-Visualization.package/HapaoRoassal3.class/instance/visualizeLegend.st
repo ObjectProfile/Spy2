@@ -30,8 +30,8 @@ visualizeLegend
 		color: Color blue;
 		dashArray: #(4);
 		yourself.
-	anime := mainCanvas attributes
-		at: #legendAnime
+	anime := mainCanvas 
+		propertyAt:#legendAnime
 		ifAbsentPut: [ mainCanvas newAnimation repeat; 
 			duration: 1 second; from: 0; to: -8; yourself ].
 	anime onStepDo: [ :t | 
