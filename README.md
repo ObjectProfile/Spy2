@@ -23,6 +23,17 @@ Metacello new
 ```
 
 ----
+# Hapao
+
+Spy2 embeds the Hapao test coverage tool. Hapao provides a visualization of the test coverage of your application. A description of Hapao may be seen in this [.pdf](http://bergel.eu/download/papers/Berg12c-HapaoSCP.pdf).
+
+Here is a screenshot using the dark theme:
+![alt](images/hapao-dark.png)
+
+The same output using the light theme:
+![alt](images/hapao-light.png)
+
+----
 # Tutorial
 
 This short-tutorial assumes you have the complete installation of Spy, which includes Roassal3. The tutorial is about building a profiler that monitors the number of object creations for each class, and the number of times a method is executed. Afterward, a visualization is built to convey information gathered during an execution.
