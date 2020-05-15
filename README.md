@@ -28,10 +28,10 @@ Metacello new
 Spy2 embeds the Hapao test coverage tool. Hapao provides a visualization of the test coverage of your application. A description of Hapao may be seen in this [.pdf](http://bergel.eu/download/papers/Berg12c-HapaoSCP.pdf).
 
 Here is a screenshot using the dark theme:
-![alt](images/hapao-dark.png)
+![alt](screenshots/hapao-dark.png)
 
 The same output using the light theme:
-![alt](images/hapao-light.png)
+![alt](screenshots/hapao-light.png)
 
 ----
 # Tutorial
