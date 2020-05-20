@@ -25,7 +25,11 @@ Metacello new
 ----
 # Hapao
 
-Spy2 embeds the Hapao test coverage tool. Hapao provides a visualization of the test coverage of your application. A description of Hapao may be seen in this [.pdf](http://bergel.eu/download/papers/Berg12c-HapaoSCP.pdf).
+Spy2 embeds the Hapao test coverage tool. Hapao provides a visualization of the test coverage of your application. Hapao may be run from the World menu, as illustrated below:
+
+![alt](screenshots/hapao-worldmenu.png)
+
+A description of Hapao may be seen in this [.pdf](http://bergel.eu/download/papers/Berg12c-HapaoSCP.pdf).
 
 Here is a screenshot using the dark theme:
 ![alt](screenshots/hapao-dark.png)
@@ -34,9 +38,9 @@ The same output using the light theme:
 ![alt](screenshots/hapao-light.png)
 
 ----
-# Tutorial
+# Short Tutorial about Spy
 
-This short-tutorial assumes you have the complete installation of Spy, which includes Roassal3. The tutorial is about building a profiler that monitors the number of object creations for each class, and the number of times a method is executed. Afterward, a visualization is built to convey information gathered during an execution.
+This short-tutorial assumes you have the complete installation of Spy, which includes Roassal3. The tutorial is about building a _profiler_ that monitors the number of object creations for each class, and the number of times a method is executed. Afterward, a visualization is built to convey information gathered during an execution.
 
 ## Step 1 - Building a skeleton for the profiler
 We give the name `DynAnalyzer` to our profiler and the package `Spy2DemoProfiler` will contain all the related code. A skeleton is created by executing the following code in a playground:
