@@ -4,7 +4,16 @@
 
 Comprehending software execution is known to be a difficult, albeit essential task when building software. Spy2 is a profiling framework for Pharo, useful to gather some information about dynamic execution for a given piece of code. Spy2 allows one to easily build specific code profilers.
 
-Spy2 may be installed on Pharo 8 and Pharo 9 using the expression:
+The latest stable version of Spy2 may be installed on Pharo 8 and Pharo 9 using the expression:
+
+```Smalltalk
+Metacello new 
+	baseline: 'Spy2'; 
+	repository: 'github://ObjectProfile/Spy2:1.0'; 
+	load
+```  
+
+The latest unstable version may be loaded using:
 
 ```Smalltalk
 Metacello new 
