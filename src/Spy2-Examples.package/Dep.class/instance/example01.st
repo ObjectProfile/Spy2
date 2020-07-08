@@ -1,3 +1,4 @@
 examples
 example01
-	Dep profile: [ RSShapeExamples new example13Arrow ] onPackageNamed: 'Roassal3'
+	<script: 'self new example01 inspect'>
+	^ Dep profile: [ RSShapeExamples new example01BasicShape ] onPackagesMatchingExpresions: {'Roassal3*'}

@@ -1,3 +1,4 @@
 examples
 example03
-	Dep runTestsForPackagesNamed: #('Roassal2' 'Trachel')
+	<script: 'self new example03 inspect'>
+	^ Dep new runTestsForPackagesMatchingExpresions: #('Roassal3*')
