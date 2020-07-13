@@ -1,0 +1,3 @@
+configuration
+addedColor
+	^ Color green

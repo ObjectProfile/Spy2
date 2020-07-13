@@ -1,7 +1,7 @@
 visualization
 visualize
 
-	| executedMethods v nodes eb |
+	| executedMethods v nodes eb con |
 	executedMethods := self allMethods select: #hasBeenExecuted.
 	v := RSCanvas new.
 	nodes := executedMethods collect: [ :m | RSEllipse new size: 20; model: m ] as: RSGroup.
@@ -28,5 +28,8 @@ visualize
 		normalize: [ :m | m numberOfOutgoingCalls / (m numberOfIncomingCalls + m numberOfOutgoingCalls + 1) ].
 	
 	RSForceBasedLayout new charge: -300; on: nodes.
-	v @ RSCanvasController.
+	
+	con := RSCanvasController new.
+	con addInteraction: RSSearchInCanvas new.
+	v @ con.
 	^ v

@@ -1,0 +1,3 @@
+configuration
+stayColor
+	^ Color gray

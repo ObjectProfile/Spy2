@@ -1,7 +1,7 @@
 visualization
 visualizeOldModel: beforeModel newModel: afterModel
 
-	| executedMethodsBefore executedMethodsAfter commonMethods onlyBeforeMethods onlyAfterMethods v ins |
+	| executedMethodsBefore executedMethodsAfter commonMethods onlyBeforeMethods onlyAfterMethods v con |
 	executedMethodsBefore := beforeModel allExecutedMethods.
 	executedMethodsAfter := afterModel allExecutedMethods.
 	commonMethods := OrderedCollection new.
@@ -19,14 +19,16 @@ visualizeOldModel: beforeModel newModel: afterModel
 
 
 	v := RSCanvas new.
+self assert: [ (onlyBeforeMethods intersection: onlyAfterMethods) isEmpty ].
+self assert: [ (commonMethods intersection: onlyAfterMethods) isEmpty ].
+self assert: [ (commonMethods intersection: onlyBeforeMethods) isEmpty ].
 	S2ExCompVisualization new 
 		commonMethods: commonMethods;
 		onlyAfterMethods: onlyAfterMethods;
 		onlyBeforeMethods: onlyBeforeMethods;
 		buildView: v.
-	v @ RSCanvasController.
 
-	ins := RSInspectable new.
+"	ins := RSInspectable new.
 	ins inspectShapeBlock: [ :m |
 		| tv |
 		tv := RSCanvas new.
@@ -37,7 +39,12 @@ visualizeOldModel: beforeModel newModel: afterModel
 			buildView: v.
 		tv open
 	].
-	v nodes @ ins.
+	v nodes @ ins."
 	
-	v nodes @ (RSMenuActivable new menuDo: [ :menu :element | menu add: 'Inspect' target: element model selector: #inspect ]).
-	^ v
+"	v nodes @ (RSMenuActivable new menuDo: [ :menu :element | menu add: 'Inspect' target: element model selector: #inspect ])."
+	
+"	self assert: [ v nodes allSatisfy: [ :e | e model class == S2ExCompMethod ] ] description: 'Something wrong'."
+
+	con := RSCanvasController new.
+	con addInteraction: RSSearchInCanvas new.
+	^ v @ con

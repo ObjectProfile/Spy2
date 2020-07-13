@@ -1,0 +1,3 @@
+configuration
+removedColor
+	^ Color blue
