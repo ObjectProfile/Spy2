@@ -18,18 +18,18 @@ visualizeOldModel: beforeModel newModel: afterModel
 	onlyAfterMethods := executedMethodsAfter select: [ :mma | commonMethods noneSatisfy: [ :m | m afterMethod == mma ] ].
 
 
-	v := RSView new.
+	v := RSCanvas new.
 	S2ExCompVisualization new 
 		commonMethods: commonMethods;
 		onlyAfterMethods: onlyAfterMethods;
 		onlyBeforeMethods: onlyBeforeMethods;
 		buildView: v.
-	v @ RSControlsView.
+	v @ RSCanvasController.
 
 	ins := RSInspectable new.
-	ins inspectElementBlock: [ :m |
+	ins inspectShapeBlock: [ :m |
 		| tv |
-		tv := RSView new.
+		tv := RSCanvas new.
 		S2ExCompVisualization new 
 			commonMethods: commonMethods;
 			onlyAfterMethods: onlyAfterMethods;
@@ -37,7 +37,7 @@ visualizeOldModel: beforeModel newModel: afterModel
 			buildView: v.
 		tv open
 	].
-	v elements @ ins.
+	v nodes @ ins.
 	
-	v elements @ (RSMenuActivable new menuDo: [ :menu :element | menu add: 'Inspect' target: element model selector: #inspect ]).
+	v nodes @ (RSMenuActivable new menuDo: [ :menu :element | menu add: 'Inspect' target: element model selector: #inspect ]).
 	v open.
