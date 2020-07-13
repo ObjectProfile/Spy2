@@ -40,4 +40,4 @@ visualizeOldModel: beforeModel newModel: afterModel
 	v nodes @ ins.
 	
 	v nodes @ (RSMenuActivable new menuDo: [ :menu :element | menu add: 'Inspect' target: element model selector: #inspect ]).
-	v open.
+	^ v

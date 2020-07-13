@@ -58,7 +58,7 @@ buildView: v
 		shapes: comonMElements;
 		connectToAll: [ :m | m connectedToAllIn: commonMethods ].
 
-	RSTreeLayout on: v nodes.
+	RSForceBasedLayout new charge: -300; on: v nodes.
 	
 	hOutgoing := RSHighlightable new withOutgoingEdges.
 	hOutgoing highlightColor: Color red translucent.
