@@ -48,6 +48,7 @@ buildView: v
 		n model outgoingCalls do: [ :n2 |
 			realNode := d at: n2 asString.
 			line := RSShapeFactory arrowedLineWithOffset: 0.2.
+			line withBorderAttachPoint.
 			line from: n.
 			line to: (v shapeFromModel: realNode).
 			v add: line.

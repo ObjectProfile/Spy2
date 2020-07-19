@@ -1,4 +1,4 @@
-visualization
+examples
 gtInspectorViewIn: composite
 	<gtInspectorPresentationOrder: -10>
 	composite roassal3
