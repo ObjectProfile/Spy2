@@ -1,0 +1,3 @@
+visualization
+visualise
+	^ self visualizeLastTwo
