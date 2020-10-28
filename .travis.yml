@@ -5,7 +5,6 @@ os:
   - linux
 
 smalltalk:
-  - Pharo64-9.0
   - Pharo64-8.0
 
   
