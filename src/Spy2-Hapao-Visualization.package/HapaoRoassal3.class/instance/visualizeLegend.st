@@ -5,7 +5,7 @@ visualizeLegend
 	b 
 		onDemand: 'Hapao';
 		container: mainCanvas.
-	b leyendDo: [ :lbl | lbl withBorder; color: (Color white alpha: 0.8); padding: 10 ].
+	b legendDo: [ :lbl | lbl withBorder; color: (Color white alpha: 0.8); padding: 10 ].
 	b text: 'Hapao' description: 'shows the test coverage'.
 	profiler unitTestResult ifNotNil: [
 		b text: profiler coverage printString,'%' description: 'of coverage (excluding tests)'.
@@ -45,7 +45,7 @@ visualizeLegend
 				RSLabel new text: m };
 			yourself ].
 	g := { box value: 'A'. line. box value: 'B' } asGroup.
-	RSHorizontalLineLayout new gapSize: 0; alignCenter; on: g.
+	RSHorizontalLineLayout new gapSize: 0; alignMiddle; on: g.
 	b	
 		text: 'A depends on B' 
 		withShape: (RSComposite new

@@ -1,6 +1,6 @@
 public
-openAbout
-	<script: 'self new openAbout'>
+canvasAbout
+	<script: 'self new canvasAbout open'>
 	| canvas spy2 hapao profilers progress shapes label textPaint border boxPaint link |
 	canvas := RSCanvas new.
 	canvas color: (Color colorFrom: '1F60E1').
@@ -69,4 +69,4 @@ openAbout
 	self applyLayout: shapes on: canvas.
 	self addFootShape: canvas.
 	self addTextLegend: canvas.
-	self setupWindow: canvas
+	^ canvas
