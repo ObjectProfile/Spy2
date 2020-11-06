@@ -46,6 +46,6 @@ visualizeGraph: canvas
 		withBorderAttachPoint;
 		shapes: shapes;
 		connectFrom: #yourself toAll: [ :m | m calledMethods asArray sortedAs: #selector ].
-	RSGraphVizLayout new
-		"charge: -350;"
-		on: shapes.
+	RSForceBasedLayout new
+		charge: -500;
+		on: shapes
