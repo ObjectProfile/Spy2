@@ -1,3 +1,3 @@
 visualize - buttons
 listMostCreatedObjects
-	^ (counting associations reverseSortedAs: #value)
+	^ (counting associations sortedAs: #value) reverse

@@ -1,3 +1,3 @@
 visualize - buttons
 showClusters
-	^ (((allObjects values flatCollect: #yourself) groupedBy: #snapshotAsInteger) reverseSortedAs: [ :assoc | assoc value size]) inspect
+	^ (((allObjects values flatCollect: #yourself) groupedBy: #snapshotAsInteger) associations sortedAs: [ :assoc | assoc value size]) reverse inspect

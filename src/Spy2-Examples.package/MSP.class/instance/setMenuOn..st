@@ -1,10 +1,21 @@
 visualize - buttons
-setMenuOn: view
-
-	view addMenu: 'most created' callback: [ self showListMostCreatedObjects ].
-	view addMenu: 'clusters' callback: [ self showClusters ].
-	view addMenu: 'inspect' callback: [ self inspect ].
-	view addMenu: 'set for comparison' callback: [ self setForComparison ].
-	view addMenu: 'set view' callback: [ Smalltalk at: #TMPView put: view ].
-	view addMenu: 'use set view' callback: [ self useLayoutFromView: (Smalltalk at: #TMPView) toView: view ].
-	view setDefaultMenu
+setMenuOn: canvas
+	| h menus |
+	h := RSHighlightable defaultBlueLabel.
+	menus := RSGroup new.
+	{'Most created'. [ self showListMostCreatedObjects ].
+	'Clusters'. [ self showClusters ].
+	'Set for comparison'. [ self setForComparison ].
+"	'Set Canvas'. [ Smalltalk at: #TMPCanvas put: canvas].
+	'Use set canvas'. [ self useLayoutFromView: (Smalltalk at: #TMPCanvas)toView: canvas ].
+"	'Inspect'. [ self inspect ]. } pairsDo: [ :text :action|
+		menus add: (RSLabel new 
+			text: text;
+			addInteraction: h;
+			isFixed: true;
+			when: RSMouseClick do: action;
+			yourself).
+		].
+	RSHorizontalLineLayout on: menus.
+	menus translateBy: 5.
+	canvas addAllShapes: menus.

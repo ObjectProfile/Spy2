@@ -1,8 +1,8 @@
 visualization
 visualize
 
-	| view |
-	view := RTView new.
-	view @ RTDraggableView.
-	self visualizeOn: view.
-	view open
+	| canvas |
+	canvas := RSCanvas new.
+	canvas @ RSCanvasController.
+	self visualizeOn: canvas.
+	canvas open
