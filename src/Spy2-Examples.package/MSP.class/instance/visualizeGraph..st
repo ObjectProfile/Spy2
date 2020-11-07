@@ -1,6 +1,6 @@
 visualization
 visualizeGraph: canvas
-	| methodsToRender shapes colorScale |
+	| methodsToRender shapes colorScale layout |
 	
 	methodsToRender := self producingMethods.
 	methodsToRender := methodsToRender sortedAs: #selector.
@@ -46,6 +46,14 @@ visualizeGraph: canvas
 		withBorderAttachPoint;
 		shapes: shapes;
 		connectFrom: #yourself toAll: [ :m | m calledMethods asArray sortedAs: #selector ].
-	RSForceBasedLayout new
-		charge: -500;
-		on: shapes
+	layout := RSForceBasedLayout new.
+	layout nodes: canvas nodes.
+	layout edges: canvas edges.
+	layout start.
+	canvas nodes do: [ :node | (layout mockElementAt: node)
+		charge: node width * -10;
+		weight: node width ].
+	canvas edges do: [ :edge | (layout mockEdgeAt: edge)
+		strength: 1;
+		length: (edge from width + edge to width) ].
+	layout runLayoutSimply.
