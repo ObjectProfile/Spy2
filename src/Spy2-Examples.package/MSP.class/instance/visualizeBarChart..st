@@ -3,6 +3,10 @@ visualizeBarChart: canvas
 	| chart classes points names instances kbytes graph plot extent rectanglePackLayout barcharts |
 	graph := canvas nodes copy.
 	classes := (self profiler counting associations sortedAs: #value) reverse collect: #key.
+	
+	"In case classes are empty, ther eis nothing to show."
+	classes ifEmpty: [ ^ self ].
+	
 	extent := 300 @ (classes size * 15).
 	names := classes collect: #name.
 	points := classes collect: [ :cls | self numberOfInstancesOfClass: cls ].
