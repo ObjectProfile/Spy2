@@ -1,4 +1,4 @@
 initialization
 highlightInteraction
 	^ methodHiglightInteraction ifNil: [ 
-		methodHiglightInteraction :=  RSHighlightable new setupAntAnimation ]
+		methodHiglightInteraction :=  RSHighlightable withAntAnimation ]
