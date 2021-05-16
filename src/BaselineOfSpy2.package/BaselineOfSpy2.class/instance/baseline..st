@@ -43,6 +43,7 @@ baseline: spec
 					'Mini'
 					'Spy2-Hapao-Visualization-AFrame'
 				);
+				group: 'HapaoCore' with: #('Core' 'Spy2-Hapao-Core');
 				group: 'default' with: #(
 					'Mini'
 				).
