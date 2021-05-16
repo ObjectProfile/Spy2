@@ -23,7 +23,8 @@ baseline: spec
 					with: [ spec requires: #('Roassal3') ];
 				package: 'Spy2-Hapao-Visualization-AFrame'
 					with: [ spec requires: #('Roassal3Exporters') ];
-				package: 'Spy2-Hapao-EmmaReport'.
+				package: 'Spy2-Hapao-EmmaReport';
+				package: 'Spy2-Hapao-Core'.
 			
 			spec 
 				group: 'Core' with: #(
