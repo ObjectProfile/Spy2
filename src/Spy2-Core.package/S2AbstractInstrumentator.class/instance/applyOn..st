@@ -1,7 +1,7 @@
 hook
 applyOn: aProfiler
 	self assert: profiler isNil.
-	self assert: S2Lock isLocked not.
+	"self assert: S2Lock isLocked not."
 	profiler := aProfiler.
 	"[ "
 		[	S2Lock lock. 	
